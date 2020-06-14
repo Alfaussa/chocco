@@ -1,0 +1,21 @@
+.feature {
+  text-align: center;
+}
+.feature__image-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.feature__icon-element {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}

@@ -1,0 +1,10 @@
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  margin-right: 46px;
+}
+.benefits__item:last-child {
+  margin-right: 0;
+}
