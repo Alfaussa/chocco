@@ -8,7 +8,7 @@
       border-radius: 0;
 
       &::before {
-        background: url("../../icons/") center center no-repeat;
+        background: url("../../decor/Галочка@1X.png") center center no-repeat;
       }
     }
   }
@@ -16,7 +16,7 @@
 .radio__elem {
   display: none;
 
-  &:checked ~ .adio__visible  {
+  &:checked ~ .radio__visible  {
     &::before {
       display: block;
     }
@@ -30,6 +30,7 @@
   background: #fff;
 
   &::before {
+    content: "";
     width: 14px;
     height: 14px;
     background:#365a49;

@@ -773,6 +773,11 @@ body, html {
   resize: none;
 }
 
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -783,13 +788,13 @@ body, html {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../icons/") center center no-repeat;
+  background: url("../../decor/Галочка@1X.png") center center no-repeat;
 }
 
 .radio__elem {
   display: none;
 }
-.radio__elem:checked ~ .adio__visible::before {
+.radio__elem:checked ~ .radio__visible::before {
   display: block;
 }
 
@@ -801,6 +806,7 @@ body, html {
   background: #fff;
 }
 .radio__visible::before {
+  content: "";
   width: 14px;
   height: 14px;
   background: #365a49;
@@ -831,7 +837,7 @@ body, html {
 .fixed-menu {
   position: fixed;
   top: 20%;
-  right: 3%;
+  right: 10%;
   z-index: 100;
 }
 
