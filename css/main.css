@@ -442,7 +442,7 @@ body, html {
   justify-content: space-between;
   height: 100%;
   padding: 0 0 45px 0;
-  background: url("/decor/Батончики 1.png") right center/50% auto no-repeat;
+  background: url("../../decor/Батончики 1.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
@@ -486,7 +486,7 @@ body, html {
 }
 
 .contacts__phone {
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
