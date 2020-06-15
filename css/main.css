@@ -412,7 +412,7 @@ body, html {
 }
 
 .hero {
-  background: url("../../decor/узор@1X.png") right bottom no-repeat;
+  background: url("../decor/узор@1X.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -421,13 +421,13 @@ body, html {
 }
 .hero::before {
   position: absolute;
-  content: url("../../decor/лист 11-66.png");
+  content: url("../decor/лист 11-66.png");
   bottom: -40px;
   left: 2%;
 }
 .hero::after {
   position: absolute;
-  content: url("../../decor/CompositeLayer@1X.png");
+  content: url("../decor/CompositeLayer@1X.png");
   bottom: -40px;
   right: 0;
 }
@@ -442,7 +442,7 @@ body, html {
   justify-content: space-between;
   height: 100%;
   padding: 0 0 45px 0;
-  background: url("/decor/Батончики 1.png") right center/50% auto no-repeat;
+  background: url("../decor/Батончики 1.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
@@ -661,7 +661,7 @@ body, html {
   top: -65px;
 }
 .reviews__display::after {
-  content: url("../../decor/Слой 2@1X.png");
+  content: url("../decor/Слой 2@1X.png");
   position: absolute;
   top: 0px;
   right: 0;
