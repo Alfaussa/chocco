@@ -642,6 +642,12 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
+.feature__title {
+  font-size: 27px;
+  color: #000000;
+  font-weight: 700;
+}
+
 .reviews__display {
   background: #f8f5f9;
   padding: 50px 45px 54px;
