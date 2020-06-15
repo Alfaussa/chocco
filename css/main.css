@@ -432,7 +432,7 @@ body, html {
   right: 0;
 }
 
-.hero__content {
+.hero__title-section {
   width: 46%;
 }
 
@@ -441,18 +441,22 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
-  background: url("../../decor/Батончики 1.png") right center/50% auto no-repeat;
+  padding: 0 0 45px 0;
+  background: url("/decor/Батончики 1.png") right center/50% auto no-repeat;
 }
 
-.section__title {
+.hero__main-title {
   font-size: 48px;
   line-height: 1.1;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #fff;
+}
+.hero__main-title--hero {
+  text-align: left;
 }
 
-.section__desc {
+.hero__title-desc {
   font-size: 21px;
   margin-bottom: 28px;
   padding-right: 10%;
@@ -486,6 +490,7 @@ body, html {
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-style: normal;
 }
 
 .contacts__phone__icon-elem {
@@ -667,7 +672,7 @@ body, html {
 }
 
 .reviews__avatar {
-  width: 354px;
+  width: 250px;
   height: 260px;
 }
 
@@ -735,6 +740,7 @@ body, html {
 
 .form {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .form__col {
@@ -783,6 +789,7 @@ body, html {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin: 0 24px 5px 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -804,6 +811,7 @@ body, html {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible::before {
   content: "";
