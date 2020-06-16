@@ -1,9 +1,9 @@
 .features-section {
 position: relative;
-background: url("../decor/узор\ лист@1X.png") left top 57% no-repeat;
+background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
 
 &::before {
-  content: url("../decor/батончик\ с\ малиной.png");
+  content: url("../decor/berry-bar.png");
   position: absolute;
   bottom: -80px;
   left: 0;
