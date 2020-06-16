@@ -3,6 +3,7 @@
   padding: 50px 45px 54px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -19,7 +20,7 @@
 
   
   &::after {
-  content: url("../decor/Слой\ 2@1X.png");
+  content: url("../decor/grey-pattern-berries.png");
   position: absolute;
   top: 0px;
   right:0;
@@ -41,6 +42,7 @@
 .reviews__content {
   flex:1;
   margin-left: 20px;
+  max-width: 55%;
 
 }
 .reviews__title{

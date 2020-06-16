@@ -41,5 +41,9 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
 }
 
