@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("./layout/fonts.css");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -412,7 +411,7 @@ body, html {
 }
 
 .hero {
-  background: url("../../decor/узор@1X.png") right bottom no-repeat;
+  background: url("../decor/bg-leaf-hero.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -421,18 +420,18 @@ body, html {
 }
 .hero::before {
   position: absolute;
-  content: url("../../decor/лист 11-66.png");
-  bottom: -40px;
+  content: url("../decor/falling-1-leaf.png");
+  bottom: -70px;
   left: 2%;
 }
 .hero::after {
   position: absolute;
-  content: url("../../decor/CompositeLayer@1X.png");
+  content: url("../decor/CompositeLayer@1X.png");
   bottom: -40px;
   right: 0;
 }
 
-.hero__content {
+.hero__title-section {
   width: 46%;
 }
 
@@ -441,21 +440,33 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
-  background: url("../../decor/Батончики 1.png") right center/50% auto no-repeat;
+  padding: 0 0 45px 0;
+  position: relative;
+  /*background: url("../decor/bars-hero.png") right center/50% auto no-repeat;*/
 }
 
-.section__title {
+.hero__main-title {
   font-size: 48px;
   line-height: 1.1;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #fff;
+}
+.hero__main-title--hero {
+  text-align: left;
 }
 
-.section__desc {
+.hero__title-desc {
   font-size: 21px;
   margin-bottom: 28px;
   padding-right: 10%;
+}
+
+.hero__image {
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 480px;
 }
 
 .header {
@@ -482,16 +493,18 @@ body, html {
 }
 
 .contacts__phone {
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-style: normal;
 }
 
 .contacts__phone__icon-elem {
   width: 12px;
   height: 12px;
   margin-right: 6px;
+  fill: white;
 }
 
 .benefits {
@@ -511,6 +524,7 @@ body, html {
 
 .benefit__icon {
   width: 45px;
+  margin-right: 10px;
 }
 
 .detail-text {
@@ -598,7 +612,7 @@ body, html {
   position: relative;
 }
 .features__item::before {
-  content: url("../../decor/divider.png");
+  content: url("../decor/divider.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -637,11 +651,18 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
+.feature__content h5 {
+  font-size: 27px;
+  color: #000000;
+  font-weight: 700;
+}
+
 .reviews__display {
   background: #f8f5f9;
   padding: 50px 45px 54px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 }
 .reviews__display::before {
   content: "";
@@ -656,18 +677,14 @@ body, html {
   top: -65px;
 }
 .reviews__display::after {
-  content: url("../../decor/Слой 2@1X.png");
+  content: url("../decor/grey-pattern-berries.png");
   position: absolute;
   top: 0px;
   right: 0;
 }
 
-.reviews__display-inner {
-  display: flex;
-}
-
 .reviews__avatar {
-  width: 354px;
+  width: 250px;
   height: 260px;
 }
 
@@ -680,6 +697,7 @@ body, html {
 .reviews__content {
   flex: 1;
   margin-left: 20px;
+  max-width: 85%;
 }
 
 .reviews__title {
@@ -702,6 +720,16 @@ body, html {
 .reviews__switcher {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+}
+
+.reviews__display {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__display-item {
+  display: flex;
 }
 
 .interactive-avatar {
@@ -716,8 +744,11 @@ body, html {
 .interactive-avatar--active {
   background-color: #0f5a47;
 }
+.interactive-avatar:hover {
+  background-color: #0f5a47;
+}
 
-.interactive-avatar__link {
+.interactive-avatar__icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -735,6 +766,7 @@ body, html {
 
 .form {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .form__col {
@@ -773,23 +805,32 @@ body, html {
   resize: none;
 }
 
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__controls:last-child {
+  margin-bottom: 20px;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin: 0 24px 5px 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../icons/") center center no-repeat;
+  background: url("../decor/green-checkmark.png") center center no-repeat;
 }
 
 .radio__elem {
   display: none;
 }
-.radio__elem:checked ~ .adio__visible::before {
+.radio__elem:checked ~ .radio__visible::before {
   display: block;
 }
 
@@ -799,8 +840,10 @@ body, html {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible::before {
+  content: "";
   width: 14px;
   height: 14px;
   background: #365a49;
@@ -813,25 +856,25 @@ body, html {
 }
 
 .order-section {
-  background: url("../../decor/паттерн@1X.png") center no-repeat;
+  background: url("../../decor/bg-berries-trnspt.png") center no-repeat;
   background-color: #d2ddd9;
 }
 
 .features-section {
   position: relative;
-  background: url("../../decor/узор лист@1X.png") left top 57% no-repeat;
+  background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
 }
 .features-section::before {
-  content: url("../../decor/батончик с малиной.png");
+  content: url("../decor/berry-bar.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -100px;
   left: 0;
 }
 
 .fixed-menu {
   position: fixed;
   top: 20%;
-  right: 3%;
+  right: 5%;
   z-index: 100;
 }
 

@@ -10,8 +10,11 @@
   &--active {
     background-color: #0f5a47;
   }
+  &:hover {
+    background-color: #0f5a47;
+  }
 }
-.interactive-avatar__link {
+.interactive-avatar__icon{
   position: absolute;
   top: 0;
   left: 0;

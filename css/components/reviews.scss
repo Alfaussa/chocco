@@ -3,6 +3,7 @@
   padding: 50px 45px 54px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -19,18 +20,16 @@
 
   
   &::after {
-  content: url("../../decor/Слой\ 2@1X.png");
+  content: url("../decor/grey-pattern-berries.png");
   position: absolute;
   top: 0px;
   right:0;
+  }
 }  
-}
-.reviews__display-inner {
-  display: flex;
-}
+
 
 .reviews__avatar {
-  width: 354px;
+  width: 250px;
   height: 260px;
 }
 .interactive-avatar__img {
@@ -41,6 +40,7 @@
 .reviews__content {
   flex:1;
   margin-left: 20px;
+  max-width: 85%;
 
 }
 .reviews__title{
@@ -60,4 +60,12 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+}
+.reviews__display {
+display: flex;
+justify-content: center;
+}
+.reviews__display-item {
+  display: flex;
 }
