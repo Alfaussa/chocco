@@ -1,5 +1,5 @@
 .hero {
-  background: url("../../decor/узор@1X.png") right bottom no-repeat;
+  background: url("../decor/bg-leaf-hero.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: 650px;
@@ -8,19 +8,19 @@
 
   &::before {
     position: absolute;
-    content: url("../../decor/лист\ 11-66.png");
-    bottom: -40px;
+    content: url("../decor/falling-1-leaf.png");
+    bottom: -70px;
     left: 2%;
   }
   &::after {
     position: absolute;
-    content: url("../../decor/CompositeLayer@1X.png");
+    content: url("../decor/CompositeLayer@1X.png");
     bottom: -40px;
     right: 0;
   }
 
 }
-.hero__content {
+.hero__title-section {
   width: 46%;
 }
 .hero__container {
@@ -28,17 +28,29 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
-  background: url("../../decor/Батончики\ 1.png") right center/50% auto no-repeat;
+  padding: 0 0 45px 0;
+  position: relative;
+  /*background: url("../decor/bars-hero.png") right center/50% auto no-repeat;*/
 }
-.section__title {
+.hero__main-title {
   font-size: 48px;
   line-height: 1.1;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #fff;
+
+  &--hero {
+    text-align: left;
+  }
 }
-.section__desc {
+.hero__title-desc {
   font-size: 21px;
   margin-bottom: 28px;
   padding-right: 10%;
+}
+.hero__image {
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 480px;
 }

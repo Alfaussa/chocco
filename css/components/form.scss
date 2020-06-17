@@ -1,5 +1,6 @@
 .form {
   display: flex;
+  margin-bottom: 20px;
 }
 .form__col {
   flex: 1;
@@ -35,6 +36,14 @@
   &--textarea {
     height: 180px;
     resize: none;
+  }
+}
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 20px;
   }
 }
 

@@ -2,13 +2,14 @@
   display: flex;
   cursor: pointer;
   user-select: none;
+  margin: 0 24px 5px 0; 
 
   &--checkbox {
     .radio__visible {
       border-radius: 0;
 
       &::before {
-        background: url("../../icons/") center center no-repeat;
+        background: url("../decor/green-checkmark.png") center center no-repeat;
       }
     }
   }
@@ -16,7 +17,7 @@
 .radio__elem {
   display: none;
 
-  &:checked ~ .adio__visible  {
+  &:checked ~ .radio__visible  {
     &::before {
       display: block;
     }
@@ -28,8 +29,10 @@
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 
   &::before {
+    content: "";
     width: 14px;
     height: 14px;
     background:#365a49;

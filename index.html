@@ -39,14 +39,14 @@
                             </a>
                         </address>
                     </header>
-                    <div class="hero__content">
-                        <div class="hero__text">
-                            <h1 class=section__title>НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
-                            <h3 class="section__desc">Наши батончики идеально подходят для тех, кто следит за своим
-                                здоровьем</h3>
+                    <div class="hero__title-section">
+                            <h1 class="hero__main-title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
+                            <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим
+                                здоровьем</div>
                             <button type="button" class="button button--theme--white">Заказать</button>
-                        </div>
-                        <div class="hero__benefits">
+                    </div>
+                        
+                        <div class="hero__icons-section">
                             <ul class="benefits">
                                 <li class="benefits__item benefit">
                                     <div class="benefit__icon">
@@ -68,10 +68,10 @@
                         </li>
                         </ul>
                     </div>
-                    <!--<div class="hero__image">
-                            <img src="." class="hero__image-element" alt="chocco">
-                        </div>-->
+                    <div class="hero__image"><img src="./decor/bars-hero.png" class="hero__image-element" alt="chocco">
+                    </div>
                 </div>
+                
         </div>
         </section>
         <!--        ............................................2 секция....................-->
@@ -92,11 +92,9 @@
                             </div>
                         </div>
                         <div class="feature__content">
-                            <h5 class="feature__title">Полезно</h5>
-                            <div class="feature__text">
+                            <h5>Полезно</h5>
                                 <p>Натуральность-ключевое качество нашей продукции. Мы используем только природные
                                     ингридиенты.</p>
-                            </div>
                         </div>
                     </li>
                     <li class="features__item feature">
@@ -106,11 +104,11 @@
                             </div>
                         </div>
                         <div class="feature__content">
-                            <h5 class="feature__title">Вкусно</h5>
-                            <div class="feature__text">
+                            <h5>Вкусно</h5>
+                            
                                 <p>Нежный, ненавязчивый, изысканный - так клиенты описывают вкусовые качества наших
                                     батончиков</p>
-                            </div>
+                           
                         </div>
                     </li>
                     <li class="features__item feature">
@@ -120,12 +118,12 @@
                             </div>
                         </div>
                         <div class="feature__content">
-                            <h5 class="feature__title">Питательно</h5>
-                            <div class="feature__text">
+                            <h5>Питательно</h5>
+                            
                                 <p>Высокое содержание качественного белка, а также всех необходимых витаминов и
                                     минералов
                                 </p>
-                            </div>
+                        
                         </div>
                     </li>
                 </ul>
@@ -138,38 +136,42 @@
             <div class="container">
                 <h2 class="section__title section__title--centered ">Отзывы</h2>
                 <div class="reviews">
-                    <div class="reviews__display">
-                        <div class="reviews__display-inner">
-                            <div class="reviews__avatar">
-                                <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
-                            </div>
-                            <article class="reviews__content">
-                                <h3 class="reviews__title">Лучший перекус</h3>
-                                <div class="review__text">
-                                    <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
-                                        дня
-                                        сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе
-                                        позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>
+                    <ul class="reviews__display">
+                       
+                            <li class="reviews__display-item">
+                                <div class="reviews__avatar">
+                                    <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
                                 </div>
-                                <div class="reviews__author">Алёна Хмельницкая</div>
-                            </article>
-                        </div>
-                    </div>
+                            </li>
+                            <li class="reviews__display-item">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__title">Лучший перекус</h3>
+                                    <div class="review__text">
+                                        <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение
+                                            дня
+                                            сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе
+                                            позволить. А батончик - он всегда под рукой. Это приятно и удобно.</p>
+                                    </div>
+                                    <div class="reviews__author">Алёна Хмельницкая</div>
+                                </div>
+                            </li>
+                        
+                    </ul>
                     <ul class="reviews__switcher">
                         <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                            <a href="" class="interactive-avatar__link">
+                            <div class="interactive-avatar__icon">
                                 <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
-                            </a>
+                            </div>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="" class="interactive-avatar__link">
+                            <div class="interactive-avatar__icon">
                                 <img src="./reviews/photo3.jpg" alt="girl" class="interactive-avatar__img">
-                            </a>
+                            </div>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="" class="interactive-avatar__link">
+                            <div class="interactive-avatar__icon">
                                 <img src="./reviews/photo2.jpg" alt="boy" class="interactive-avatar__img">
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -191,7 +193,7 @@
                             </label>
                             <label for="" class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" placeholder="" class="form__input form__input-half">
+                                <input type="number" placeholder="" class="form__input form__input-half">
                             </label>
                         </div>
                         <div class="form__row">
@@ -211,11 +213,11 @@
                             </label>
                             <label for="" class="form__block">
                                 <div class="form__title">Квартира</div>
-                                <input type="text" placeholder="" class="form__input form__input-half">
+                                <input type="number" placeholder="" class="form__input form__input-half">
                             </label>
                             <label for="" class="form__block">
                                 <div class="form__title">Этаж</div>
-                                <input type="text" placeholder="" class="form__input form__input-half">
+                                <input type="number" placeholder="" class="form__input form__input-half">
                             </label>
                         </div>
                     </div>
@@ -242,15 +244,15 @@
                             <label class="radio radio--checkbox">
                                 <input type="checkbox" class="radio__elem">
                                 <div class="radio__visible"></div>
-                                <div class="radio__title">Потребуется сдача</div>
+                                <div class="radio__title">Не перезванивать</div>
                             </label>
                         </div>
 
-                        <div class="form__btns">
-                            <button type="submit" class="button button--theme--green">Заказать</button>
-                            <button type="reset" class="button button--theme--transparent">Очистить</button>
-                        </div>
                 </form>
+                <div class="form__btns">
+                    <button type="submit" class="button button--theme--green">Заказать</button>
+                    <button type="reset" class="button button--theme--transparent">Очистить</button>
+                </div>
             </div>
         </section>
         </div>
@@ -269,5 +271,4 @@
         </ul>
     </nav>
 </body>
-
 </html>
