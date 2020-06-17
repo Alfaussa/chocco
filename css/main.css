@@ -465,7 +465,7 @@ body, html {
 .hero__image {
   display: flex;
   position: absolute;
-  margin-top: -500px;
+  margin-top: 50px;
   margin-left: 480px;
 }
 
@@ -720,6 +720,7 @@ body, html {
 .reviews__switcher {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .reviews__display {
