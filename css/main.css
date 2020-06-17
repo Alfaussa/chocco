@@ -441,7 +441,8 @@ body, html {
   justify-content: space-between;
   height: 100%;
   padding: 0 0 45px 0;
-  background: url("../decor/bars-hero.png") right center/50% auto no-repeat;
+  position: relative;
+  /*background: url("../decor/bars-hero.png") right center/50% auto no-repeat;*/
 }
 
 .hero__main-title {
@@ -459,6 +460,13 @@ body, html {
   font-size: 21px;
   margin-bottom: 28px;
   padding-right: 10%;
+}
+
+.hero__image {
+  display: flex;
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 480px;
 }
 
 .header {
@@ -496,6 +504,7 @@ body, html {
   width: 12px;
   height: 12px;
   margin-right: 6px;
+  fill: white;
 }
 
 .benefits {
@@ -515,6 +524,7 @@ body, html {
 
 .benefit__icon {
   width: 45px;
+  margin-right: 10px;
 }
 
 .detail-text {
@@ -602,7 +612,7 @@ body, html {
   position: relative;
 }
 .features__item::before {
-  content: url("../../decor/divider.png");
+  content: url("../decor/divider.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -641,7 +651,7 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-.feature__title {
+.feature__content h5 {
   font-size: 27px;
   color: #000000;
   font-weight: 700;
@@ -673,10 +683,6 @@ body, html {
   right: 0;
 }
 
-.reviews__display-inner {
-  display: flex;
-}
-
 .reviews__avatar {
   width: 250px;
   height: 260px;
@@ -691,7 +697,7 @@ body, html {
 .reviews__content {
   flex: 1;
   margin-left: 20px;
-  max-width: 55%;
+  max-width: 85%;
 }
 
 .reviews__title {
@@ -716,6 +722,15 @@ body, html {
   justify-content: center;
 }
 
+.reviews__display {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__display-item {
+  display: flex;
+}
+
 .interactive-avatar {
   width: 80px;
   height: 80px;
@@ -728,8 +743,11 @@ body, html {
 .interactive-avatar--active {
   background-color: #0f5a47;
 }
+.interactive-avatar:hover {
+  background-color: #0f5a47;
+}
 
-.interactive-avatar__link {
+.interactive-avatar__icon {
   position: absolute;
   top: 0;
   left: 0;

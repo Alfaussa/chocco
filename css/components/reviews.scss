@@ -24,11 +24,9 @@
   position: absolute;
   top: 0px;
   right:0;
+  }
 }  
-}
-.reviews__display-inner {
-  display: flex;
-}
+
 
 .reviews__avatar {
   width: 250px;
@@ -42,7 +40,7 @@
 .reviews__content {
   flex:1;
   margin-left: 20px;
-  max-width: 55%;
+  max-width: 85%;
 
 }
 .reviews__title{
@@ -62,4 +60,11 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
+}
+.reviews__display {
+display: flex;
+justify-content: center;
+}
+.reviews__display-item {
+  display: flex;
 }
