@@ -2,11 +2,22 @@
 position: relative;
 background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
 
+  @include phones {
+  background: none;
+  }
+
+
 &::before {
   content: url("../decor/berry-bar.png");
   position: absolute;
-  bottom: -100px;
+  bottom: rem(-100px);
   left: 0;
+  }
+  &::before{
+    @include tablets {
+     display: none;
+    }
+
 }
 
 }

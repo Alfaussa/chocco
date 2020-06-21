@@ -1,18 +1,33 @@
 .features {
   display: flex;
+
+  @include phones {
+
+    flex-direction: column; 
+
+  }
 }
 .features__item {
   flex: 1;
   padding: 0 3%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+  }
+
   &::before {
     content: url("../decor/divider.png");
     position: absolute;
-    top: 30px;
+    top: rem(30px);
     right: 0;
     transform: translateX(50%);
+    
+    @include phones {
 
+      background: none; 
+  
+    }
     
   }
 

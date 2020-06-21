@@ -1,36 +1,41 @@
 .reviews__display {
   background: #f8f5f9;
-  padding: 50px 45px 54px;
+  padding: rem(50px) rem(45px) rem(54px);
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #ffffff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 
   
   &::after {
   content: url("../decor/grey-pattern-berries.png");
   position: absolute;
-  top: 0px;
+  top: rem(0px);
   right:0;
   }
 }  
 
 
 .reviews__avatar {
-  width: 250px;
-  height: 260px;
+  width: rem(250px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px)
+  }
 }
 .interactive-avatar__img {
   object-fit: cover;
@@ -39,32 +44,41 @@
 }
 .reviews__content {
   flex:1;
-  margin-left: 20px;
+  margin-left: rem(20px);
   max-width: 85%;
+  @include tablets {
+    margin-left: rem(40px);
+  }
 
 }
 .reviews__title{
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: #000000;
 }
 .review__text {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
 }
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: #000000;
 }
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
 }
 .reviews__display {
 display: flex;
 justify-content: center;
+
+@include tablets {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
 }
 .reviews__display-item {
   display: flex;
