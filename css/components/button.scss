@@ -11,12 +11,21 @@
   &--theme--white {
     background: #fff;
     color: green($color: #000000);
-  
-    &:hover {
-      color: #fff;
-      background: green;
+    align-self: flex-start;
 
+    @include tablets  {
+      align-self: center;
     }
+    @include phones  {
+      align-self: center;
+    }
+  }
+  
+  &:hover {
+    color: #fff;
+    background: green;
+
+    
   }
 
   &--theme--green {

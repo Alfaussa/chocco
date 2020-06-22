@@ -4,6 +4,19 @@
   overflow: hidden;
   position: relative;
   margin-bottom: rem(20px);
+  display: flex;
+  justify-content: center;
+
+  @include tablets {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  }
+  @include phones {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  }
 
   &::before {
     content: "";
@@ -82,4 +95,5 @@ justify-content: center;
 }
 .reviews__display-item {
   display: flex;
+  text-align: center;
 }

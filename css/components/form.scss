@@ -1,14 +1,16 @@
 .form {
   display: flex;
   margin-bottom: rem(50px);
-  flex-direction: column;
+  
 
   @include tablets {
     padding: 0 19%;
+    flex-direction: column;
   }
 
   @include phones {
     padding: 0;
+    flex-direction: column;
   }
 }
 .form__col {
