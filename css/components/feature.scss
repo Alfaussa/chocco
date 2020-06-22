@@ -3,6 +3,7 @@
 
   @include phones {
     display: flex;
+    text-align: start;
   }
 }
 .feature__image-wrapper {

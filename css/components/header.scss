@@ -40,6 +40,7 @@
   display: flex;
   align-items: center;
   font-style: normal;
+
   
 .contacts__phone__icon-elem {
   width: rem(12px);
@@ -47,6 +48,7 @@
   margin-right: rem(6px);
   fill: white;
   flex-shrink: 0;
+  
 }
 .contacts__phone__text {
   white-space: nowrap;
