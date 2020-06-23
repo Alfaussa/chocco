@@ -1184,8 +1184,7 @@ body, html {
 }
 
 .map-image {
-  height: 100vh;
-  min-height: 36.1111111111rem;
+  min-height: 22.2222222222rem;
   position: relative;
   display: flex;
 }
