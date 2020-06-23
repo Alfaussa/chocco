@@ -1,9 +1,17 @@
 .section {
   height: 100vh;
+  min-height: rem(650px);
   min-width: rem(320px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+    min-height: 0;
+  }
 
   &--font-color-green{
     color: $darkgreen;
@@ -22,4 +30,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000;
+}
+.section__title--green {
+  color: $darkgreen;
+  font-size: rem(40px);
 }

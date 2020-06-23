@@ -25,10 +25,19 @@
 
 }
 .feature__content {
+  width: 110%;
 
   h5 {
   font-size: rem(27px);
   color: #000000;
   font-weight: 700;
+  margin-bottom: rem(5px);
+  }
+}
+.feature__image {
+  margin-bottom: rem(10px);
+
+  @include phones {
+    margin-right: rem(17px);
   }
 }

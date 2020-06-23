@@ -87,10 +87,12 @@ display: none;
 
   @include tablets {
     padding: 0 20%;
+    font-size: rem(21px);
+
   }
   @include phones {
     padding: 0 16%;
-  }
+  } font-size: rem(20px);
 
 }
 .hero__image {

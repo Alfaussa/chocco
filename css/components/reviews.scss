@@ -3,7 +3,7 @@
   padding: rem(50px) rem(45px) rem(54px);
   overflow: hidden;
   position: relative;
-  margin-bottom: rem(20px);
+  margin-bottom: rem(50px);
   display: flex;
   justify-content: center;
 
@@ -44,6 +44,7 @@
 .reviews__avatar {
   width: rem(250px);
   height: rem(260px);
+  margin-bottom: rem(15px);
 
   @include tablets {
     width: rem(130px);
@@ -61,8 +62,12 @@
   max-width: 85%;
   @include tablets {
     margin-left: rem(40px);
+    min-width: 100%;
   }
-
+  @include phones {
+    
+    min-width: 100%;
+  }
 }
 .reviews__title{
   font-size: rem(30px);
