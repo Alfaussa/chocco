@@ -510,10 +510,12 @@ body, html {
   font-size: 1.1666666667rem;
   margin-bottom: 1.5555555556rem;
   padding-right: 10%;
+  font-size: 1.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 20%;
+    font-size: 1.1666666667rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -660,8 +662,9 @@ body, html {
 }
 .button--theme--transparent {
   background: transparent;
-  color: #000000;
+  color: #0b4d3c;
   text-transform: none;
+  font-weight: 400;
 }
 .button--theme--transparent:hover {
   color: #0b4d3c;
@@ -669,10 +672,21 @@ body, html {
 
 .section {
   height: 100vh;
+  min-height: 36.1111111111rem;
   min-width: 17.7777777778rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: 0;
+  }
 }
 .section--font-color-green {
   color: #0b4d3c;
@@ -690,8 +704,14 @@ body, html {
   color: #000;
 }
 
+.section__title--green {
+  color: #0b4d3c;
+  font-size: 2.2222222222rem;
+}
+
 .headline {
   text-align: center;
+  margin-bottom: 1.6666666667rem;
 }
 
 .headline__title {
@@ -725,13 +745,18 @@ body, html {
 .features__item::before {
   content: url("../decor/divider.png");
   position: absolute;
-  top: 1.6666666667rem;
+  top: 2.6666666667rem;
   right: 0;
   transform: translateX(50%);
 }
 @media screen and (max-width: 480px) {
   .features__item::before {
-    background: none;
+    content: "";
+  }
+}
+@media screen and (max-width: 768px) {
+  .features__item::before {
+    content: "";
   }
 }
 .features__item:first-child {
@@ -773,10 +798,23 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
+.feature__content {
+  width: 110%;
+}
 .feature__content h5 {
   font-size: 1.5rem;
   color: #000000;
   font-weight: 700;
+  margin-bottom: 0.2777777778rem;
+}
+
+.feature__image {
+  margin-bottom: 0.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .feature__image {
+    margin-right: 0.9444444444rem;
+  }
 }
 
 .reviews__display {
@@ -784,7 +822,7 @@ body, html {
   padding: 2.7777777778rem 2.5rem 3rem;
   overflow: hidden;
   position: relative;
-  margin-bottom: 1.1111111111rem;
+  margin-bottom: 2.7777777778rem;
   display: flex;
   justify-content: center;
 }
@@ -824,6 +862,7 @@ body, html {
 .reviews__avatar {
   width: 13.8888888889rem;
   height: 14.4444444444rem;
+  margin-bottom: 0.8333333333rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__avatar {
@@ -846,6 +885,12 @@ body, html {
 @media screen and (max-width: 768px) {
   .reviews__content {
     margin-left: 2.2222222222rem;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    min-width: 100%;
   }
 }
 
@@ -920,18 +965,6 @@ body, html {
   height: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .interactive-avatar__img {
-    width: 50%;
-    height: 50%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .interactive-avatar__img {
-    width: 50%;
-    height: 50%;
-  }
-}
 
 .form {
   display: flex;
@@ -994,6 +1027,7 @@ body, html {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0.8333333333rem;
 }
 @media screen and (max-width: 480px) {
   .form__controls {
@@ -1065,13 +1099,18 @@ body, html {
     background: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .features-section {
+    background: url("../decor/bg-leaf1.png") left top 10% no-repeat;
+  }
+}
 .features-section::before {
   content: url("../decor/berry-bar.png");
   position: absolute;
   bottom: -5.5555555556rem;
   left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .features-section::before {
     display: none;
   }
@@ -1123,6 +1162,8 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  margin-top: 0.6666666667rem;
+  padding-top: 0.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -1153,14 +1194,13 @@ body, html {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
-  width: 100%;
   bottom: 0;
-  background-color: white;
   min-height: 5.5555555556rem;
-  overflow: auto;
+  background-color: #ffffff;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1171,6 +1211,7 @@ body, html {
 .footer__col {
   display: flex;
   flex-direction: column;
+  margin: 0 1.6666666667rem 0 1.6666666667rem;
 }
 @media screen and (max-width: 480px) {
   .footer__col {
@@ -1202,11 +1243,16 @@ body, html {
 }
 
 .footer__phone-icon {
-  fill: green;
+  fill: #0b4d3c;
 }
 
 .footer__contacts__phone {
-  color: green;
+  color: #0b4d3c;
+}
+@media screen and (max-width: 480px) {
+  .footer__contacts__phone {
+    align-self: center;
+  }
 }
 
 .phone-icon {
@@ -1225,7 +1271,7 @@ body, html {
 }
 
 .feature-icon {
-  fill: green;
+  fill: #000000;
   width: 4.1666666667rem;
   height: 3.8333333333rem;
   position: absolute;

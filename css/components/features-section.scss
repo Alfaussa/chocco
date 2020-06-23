@@ -5,6 +5,9 @@ background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
   @include phones {
   background: none;
   }
+  @include tablets {
+    background: url("../decor/bg-leaf1.png") left top 10% no-repeat;
+  }
 
 
 &::before {
@@ -14,7 +17,7 @@ background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
   left: 0;
   }
   &::before{
-    @include tablets {
+    @include phones {
      display: none;
     }
 
