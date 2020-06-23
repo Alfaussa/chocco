@@ -623,6 +623,10 @@ body, html {
   max-width: 4.7222222222rem;
 }
 
+.benefit__icon {
+  margin-right: 10px;
+}
+
 .button {
   font-size: 1.0555555556rem;
   font-weight: bold;
@@ -1186,10 +1190,8 @@ body, html {
   display: flex;
 }
 
-.map {
-  background: url("../decor/map-bg.png") no-repeat;
-  position: relative;
-  background-size: 100%;
+.map-img {
+  width: 100%;
 }
 
 .footer {
@@ -1253,6 +1255,10 @@ body, html {
   .footer__contacts__phone {
     align-self: center;
   }
+}
+
+.contacts__phone__icon {
+  margin-right: 5px;
 }
 
 .phone-icon {
