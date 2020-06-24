@@ -516,6 +516,11 @@ body, html {
   margin-bottom: 0.8333333333rem;
   color: #fff;
 }
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 2.1111111111rem;
+  }
+}
 .hero__main-title--hero {
   text-align: left;
 }
@@ -524,7 +529,7 @@ body, html {
   font-size: 1.1666666667rem;
   margin-bottom: 1.5555555556rem;
   padding-right: 10%;
-  font-size: 1.1111111111rem;
+  font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
@@ -727,6 +732,12 @@ body, html {
   text-transform: uppercase;
   color: #000;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
 
 .section__title--green {
   color: #0b4d3c;
@@ -744,6 +755,11 @@ body, html {
 
 .headline__subtitle {
   padding: 0 10%;
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    font-size: 0.8888888889rem;
+  }
 }
 
 .features {
@@ -811,6 +827,12 @@ body, html {
   background: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .feature__image-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 .feature__icon-element {
@@ -973,6 +995,13 @@ body, html {
 .interactive-avatar:hover {
   background-color: #0f5a47;
 }
+@media screen and (max-width: 480px) {
+  .interactive-avatar {
+    width: 3.8888888889rem;
+    height: 3.8888888889rem;
+    border: 0.2222222222rem solid transparent;
+  }
+}
 
 .interactive-avatar__icon {
   position: absolute;
@@ -1046,6 +1075,17 @@ body, html {
 .form__input--textarea {
   height: 10rem;
   resize: none;
+}
+@media screen and (max-width: 480px) {
+  .form__input--textarea {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: 0.5rem 0.5555555556rem;
+    border: solid 0.1111111111rem transparent;
+  }
 }
 
 .form__controls {
@@ -1207,6 +1247,7 @@ body, html {
   min-height: 22.2222222222rem;
   position: relative;
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .map-img {
@@ -1221,15 +1262,13 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  min-height: 5.5555555556rem;
   background-color: #ffffff;
   width: 100%;
 }
 @media screen and (max-width: 480px) {
   .footer {
     flex-direction: column;
+    justify-content: start;
   }
 }
 
