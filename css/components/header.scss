@@ -33,6 +33,10 @@
 .menu__link {
   text-decoration: none;
   white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+
 }
 .contacts__phone {
   font-size: rem(20px);
@@ -40,6 +44,10 @@
   display: flex;
   align-items: center;
   font-style: normal;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   
 .contacts__phone__icon-elem {
