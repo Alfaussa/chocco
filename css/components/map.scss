@@ -6,7 +6,11 @@
 }
 .map-img {
 width: 100%;
-}
+ 
+  @include phones {
+  width: fit-content;
+  }
+}  
 .map {
   justify-content: start;
 }

@@ -61,7 +61,8 @@
 
     &::before {
       content: url("../decor/bars-set-phones.png");
-    
+      position: absolute;
+      top: 7px;
     }
   }
 }
@@ -109,7 +110,9 @@ display: none;
   }
   @include phones {
     padding: 0 16%;
-  } font-size: rem(18px);
+    font-size: rem(18px);
+    line-height: 1;
+  }    
 
 }
 .hero__image {
@@ -123,6 +126,10 @@ display: none;
   @include tablets {
     display: none;
     }
+
+  @include phones {
+      display: none;
+  }
 }
 .hero__image-element {
   position: relative;
