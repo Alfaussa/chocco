@@ -90,6 +90,9 @@ display: none;
   margin-bottom: rem(15px);
   color: #fff;
 
+  @include phones {
+    font-size: rem(38px);
+  }  
   &--hero {
     text-align: left;
   }
@@ -106,7 +109,7 @@ display: none;
   }
   @include phones {
     padding: 0 16%;
-  } font-size: rem(20px);
+  } font-size: rem(18px);
 
 }
 .hero__image {

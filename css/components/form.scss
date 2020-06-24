@@ -51,6 +51,14 @@
   &--textarea {
     height: rem(180px);
     resize: none;
+    @include phones {
+      height: rem(90px);
+    }
+  }
+
+  @include phones {
+    padding: rem(9px) rem(10px); 
+    border: solid rem(2px) transparent;
   }
 }
 .form__controls {

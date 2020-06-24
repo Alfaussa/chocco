@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  min-height: rem(100px);
   background-color: #ffffff;
   width: 100%;
 
 
   @include phones {
     flex-direction: column;
+    justify-content: start;
   }
 }
 

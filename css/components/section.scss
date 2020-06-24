@@ -30,6 +30,11 @@
   text-align: center;
   text-transform: uppercase;
   color: #000;
+
+  @include phones {
+    width: 100%;
+    font-size: 2rem;
+  }
 }
 .section__title--green {
   color: $darkgreen;

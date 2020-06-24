@@ -13,6 +13,12 @@
   &:hover {
     background-color: #0f5a47;
   }
+
+  @include phones {
+    width: rem(70px);
+    height: rem(70px);
+    border: rem(4px) solid transparent;
+  }
 }
 .interactive-avatar__icon{
   position: absolute;
