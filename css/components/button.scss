@@ -1,9 +1,9 @@
 .button {
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
-  padding: 18px 35px;
+  padding: rem(18px) rem(35px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   border: none;
@@ -11,12 +11,21 @@
   &--theme--white {
     background: #fff;
     color: green($color: #000000);
-  
-    &:hover {
-      color: #fff;
-      background: green;
+    align-self: flex-start;
 
+    @include tablets  {
+      align-self: center;
     }
+    @include phones  {
+      align-self: center;
+    }
+  }
+  
+  &:hover {
+    color: #fff;
+    background: green;
+
+    
   }
 
   &--theme--green {
@@ -31,8 +40,9 @@
   }
   &--theme--transparent {
     background: transparent;
-    color: #000000;
+    color: $darkgreen;
     text-transform: none;
+    font-weight: 400;
 
     &:hover {
       color: $darkgreen;  
