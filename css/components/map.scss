@@ -3,6 +3,11 @@
   position: relative;
   display: flex;
   margin-bottom: rem(18px);
+
+  @include tablets {
+  height: 90%;
+  width: max-content;
+  }
 }
 .map-img {
 width: 100%;
