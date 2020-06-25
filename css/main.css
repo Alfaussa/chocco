@@ -485,7 +485,7 @@ body, html {
     text-align: center;
   }
   .hero__title-section::before {
-    content: url("../../decor/barph.png");
+    content: url("../decor/barph.png");
   }
 }
 
