@@ -1,0 +1,27 @@
+.map-image{
+  min-height: rem(400px);
+  position: relative;
+  display: flex;
+  margin-bottom: rem(18px);
+
+  @include tablets {
+  height: 90%;
+  width: max-content;
+  }
+}
+.map-img {
+width: 100%;
+ 
+  @include phones {
+  width: auto;
+  heigth:100%;
+  }
+  
+  @include tablets {
+  width: auto;
+  heigth:100%;
+  }
+}  
+.map {
+  justify-content: start;
+}

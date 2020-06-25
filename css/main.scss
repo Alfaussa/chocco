@@ -1,13 +1,18 @@
 $containerwidth: 940px;
 $baseFontSize: 18px;
 
+$tablets: 768px;
+$phones: 480px;
+
 $blue: #61c4d9;
 $darkgreen: #0b4d3c;
 
 $z-fixed-menu:100;
 
+@import "layout/media";
+
 @import url("./layout/fonts.css");
-@import "layout/normalize";
+@import "normalize";
 
 
 @import "layout/base";
@@ -28,3 +33,8 @@ $z-fixed-menu:100;
 @import "components/order";
 @import "components/features-section";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/map";
+@import "components/footer";
+@import "components/icons";
+
