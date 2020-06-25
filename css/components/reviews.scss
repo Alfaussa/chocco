@@ -16,6 +16,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-bottom: rem(25px);
   }
 
   &::before {
@@ -33,12 +34,13 @@
 
   
   &::after {
-  content: url("../decor/grey-pattern-berries.png");
+  content: url("../../decor/grey-pattern-berries.png");
   position: absolute;
   top: rem(0px);
   right:0;
 
   @include phones {
+    content: url("../decor/berry-pat-phone.png");
     width: 35%;
   }
   }

@@ -45,10 +45,7 @@
   align-items: center;
   font-style: normal;
 
-  &:hover {
-    opacity: 0.5;
-  }
-
+ 
   
 .contacts__phone__icon-elem {
   width: rem(12px);
@@ -60,6 +57,11 @@
 }
 .contacts__phone__text {
   white-space: nowrap;
+  &:hover {
+    opacity: 0.5;
+  }
+  
+  
 }
 }
 .contacts__phone.header__contacts__phone {
