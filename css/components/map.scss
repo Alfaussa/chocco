@@ -8,7 +8,13 @@
 width: 100%;
  
   @include phones {
-  width: fit-content;
+  width: auto;
+  heigth:100%;
+  }
+  
+  @include tablets {
+  width: auto;
+  heigth:100%;
   }
 }  
 .map {

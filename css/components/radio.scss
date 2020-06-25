@@ -13,6 +13,9 @@
       }
     }
   }
+  &:last-child {
+    margin-right: 2.3rem;
+  }
 }
 .radio__elem {
   display: none;
@@ -30,6 +33,11 @@
   border-radius: 50%;
   background: #fff;
   margin-right: rem(10px);
+
+  @include phones {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
 
   &::before {
     content: "";

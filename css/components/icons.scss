@@ -3,6 +3,11 @@
   opacity: 100%;
   width: rem(15px);
   height: rem(15px);
+
+  &:hover {
+    opacity: 0.5;
+  }
+
 }
 .benefits-icon {
   fill:white;

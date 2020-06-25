@@ -9,6 +9,7 @@
   }
 
   @include phones {
+    font-size: 12px;
     padding: 0;
     flex-direction: column;
   }
@@ -28,6 +29,14 @@
 .form__row {
   display: flex;
   margin-bottom: rem(18px);
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 .form__block {
   flex: 1;
@@ -53,10 +62,19 @@
     resize: none;
     @include phones {
       height: rem(90px);
+      margin-bottom: rem(19px);
+    }
+
+    @include phones {
+      height: rem(120px);
     }
   }
 
   @include phones {
+    padding: rem(9px) rem(10px); 
+    border: solid rem(2px) transparent;
+  }
+  @include tablets{
     padding: rem(9px) rem(10px); 
     border: solid rem(2px) transparent;
   }

@@ -38,6 +38,10 @@
   color: #000000;
   font-weight: 700;
   margin-bottom: rem(5px);
+
+  @include phones {
+    font-size: rem(12px);
+  }
   }
 }
 .feature__image {

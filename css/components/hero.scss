@@ -60,9 +60,9 @@
     text-align: center;
 
     &::before {
-      content: url("../decor/bars-set-phones.png");
-      position: absolute;
-      top: 7px;
+      content: url("../../decor/barph.png");
+      
+      
     }
   }
 }
@@ -92,7 +92,7 @@ display: none;
   color: #fff;
 
   @include phones {
-    font-size: rem(38px);
+    font-size: rem(32px);
   }  
   &--hero {
     text-align: left;
@@ -109,8 +109,8 @@ display: none;
 
   }
   @include phones {
-    padding: 0 16%;
-    font-size: rem(18px);
+    padding: 0;
+    font-size: rem(16px);
     line-height: 1;
   }    
 
