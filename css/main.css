@@ -1446,3 +1446,60 @@ body, html {
   height: 0.8333333333rem;
   margin-right: rem 5px;
 }
+
+.arrow {
+  width: 0.8333333333rem;
+  height: 0.8333333333rem;
+}
+
+.bar {
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
+}
+
+.close {
+  width: 0.8333333333rem;
+  height: 0.8333333333rem;
+}
+
+.opened__menu {
+  display: none;
+  position: absolute;
+  background-color: #333537;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .opened__menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .opened__menu {
+    display: flex;
+  }
+}
+
+.menu__list--opened {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menu__item {
+  margin-right: 0.8333333333rem;
+  margin-bottom: 10px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+}
+.menu__link:hover {
+  opacity: 0.5;
+}
