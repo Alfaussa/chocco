@@ -6,12 +6,23 @@
   height: 100%;
   width: 100%;
 
-  @include tablets {
-    display: flex;
-  }
-  @include phones {
-    display: flex;
-  }
+}
+
+.opened__menu--active {
+
+ display: none;
+
+
+
+ @include tablets {
+  display: flex;
+  justify-content: center;
+}
+@include phones {
+  display: flex;
+  justify-content: center;
+}
+
 }
 
 .menu__list--opened{
@@ -34,4 +45,9 @@
   &:hover {
     opacity: 0.5;
   }
+}
+.close-icon {
+  position: absolute;
+  top: rem(15px);
+  right: rem(15px);
 }
