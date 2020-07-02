@@ -969,8 +969,9 @@ body, html {
 .reviews__title {
   font-size: 1.6666666667rem;
   font-weight: bold;
-  margin-bottom: 1.2222222222rem;
+  margin-bottom: 0.5555555556rem;
   color: #000000;
+  padding-top: 1.1111111111rem;
 }
 
 .review__text {
@@ -1448,13 +1449,16 @@ body, html {
 }
 
 .arrow {
-  width: 0.8333333333rem;
-  height: 0.8333333333rem;
+  width: 1.3888888889rem;
+  height: 1.3888888889rem;
 }
 
 .bar {
   width: 2.2222222222rem;
   height: 2.2222222222rem;
+  fill: white;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 .close {
@@ -1517,8 +1521,19 @@ body, html {
   right: 0.8333333333rem;
 }
 
+.container-menu {
+  display: flex;
+  align-items: center;
+}
+
 .menu-section {
   background-color: #f8fafa;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .menu-section {
+    flex-direction: column;
+  }
 }
 
 .slider {
@@ -1558,6 +1573,18 @@ body, html {
   .menu-image {
     display: flex;
     margin-right: 0;
+    width: 80%;
+    margin-bottom: 0.5555555556rem;
+  }
+}
+
+.menu-img {
+  margin-right: 4.7222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .menu-img {
+    margin-right: 0;
+    width: 80%;
   }
 }
 
@@ -1579,25 +1606,34 @@ body, html {
   }
 }
 
-.menu__title {
+.ingrid-icon span {
+  color: white;
   font-weight: bold;
+}
+
+.menu__title {
+  font-size: 1.3888888889rem;
+  line-height: 1;
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 1.1111111111rem;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2rem;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .menu__title {
-    font-size: 2.2222222222rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
   .menu__title {
-    font-size: 1.6666666667rem;
+    font-size: 0.8888888889rem;
   }
 }
 
 .menu-desc-text {
   color: #666666;
+  width: 88%;
 }
 @media screen and (max-width: 768px) {
   .menu-desc-text {
@@ -1606,20 +1642,19 @@ body, html {
 }
 
 .menu-desc-detail__price {
-  font-size: 3.3333333333rem;
+  font-size: 2.2222222222rem;
   color: #151515;
   font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   .menu-desc-detail__price {
-    font-size: 3.0555555556rem;
+    font-size: 1.6666666667rem;
   }
 }
 
 .menu-desc-detail {
-  display: flex;
   align-items: center;
-  margin-right: 0.5555555556rem;
+  margin-right: 2.2222222222rem;
 }
 .menu-desc-detail:last-child {
   margin-right: 0;
@@ -1628,4 +1663,17 @@ body, html {
 .ingrid-icon span {
   color: white;
   font-weight: bold;
+}
+
+.detail {
+  display: flex;
+  margin-right: 10px;
+}
+
+.arrow-left {
+  display: flex;
+}
+
+.arrow-left {
+  display: flex;
 }

@@ -1,5 +1,10 @@
 .menu-section {
   background-color: #f8fafa;
+  flex-direction: row;
+  @include tablets {
+    flex-direction: column;
+   
+  }
 }
 
 .slider {
@@ -31,10 +36,22 @@ align-items: center;
 
 .menu-image {
   margin-bottom: rem(80px);
+  
 
   @include tablets {
     display: flex;
     margin-right: 0;
+    width: 80%;
+    margin-bottom: rem(10px);
+
+  }
+}
+
+.menu-img {
+  margin-right: rem(85px);
+  @include tablets {
+    margin-right: 0;
+    width: 80%;
   }
 }
 
@@ -54,24 +71,32 @@ align-items: center;
   }
 
 }
-
-.menu__title {
+.ingrid-icon span {
+  color: white;
   font-weight: bold;
+}
+.menu__title {
+
+  font-size: rem(25px);
+  line-height: 1;
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: rem(20px);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: rem(36px);
+  color: #000;
 
   @include tablets {
-    font-size: rem(40px);
+    font-size: rem(18px);
   }
 
   @include phones {
-    font-size: rem(30px);
+    font-size: rem(16px);
   }
 }
 
 .menu-desc-text {
   color: #666666;
+  width: 88%;
 
   @include tablets {
     font-size: rem(16px);
@@ -79,19 +104,18 @@ align-items: center;
 }
 
 .menu-desc-detail__price {
-  font-size: rem(60px);
+  font-size: rem(40px);
   color: #151515;
   font-weight: 300;
 
   @include tablets {
-    font-size: rem(55px);
+    font-size: rem(30px);
   }
 }
 
 .menu-desc-detail {
-  display: flex;
   align-items: center;
-  margin-right: rem(10px);
+  margin-right: rem(40px);
 
   &:last-child {
     margin-right: 0;
@@ -101,4 +125,14 @@ align-items: center;
 .ingrid-icon span {
   color: white;
   font-weight: bold;
+}
+.detail {
+  display: flex;
+  margin-right: 10px;
+}
+.arrow-left {
+  display: flex;
+}
+.arrow-left {
+  display: flex;
 }
