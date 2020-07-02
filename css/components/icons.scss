@@ -37,13 +37,16 @@
   margin-right: rem (5px);
 }
 .arrow {
-  width: rem(15px);
-  height: rem(15px);
+  width: rem(25px);
+  height: rem(25px);
 }
 
 .bar {
   width: rem(40px);
   height: rem(40px);
+  fill: white;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 .close {
   width: rem(15px);
