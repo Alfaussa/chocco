@@ -96,8 +96,8 @@ align-items: center;
   font-size: rem(15px);
   font-weight: bold;
 
-  &:hover  {
-    .ingrid-menu{
+  &:hover + .ingrid-menu{ 
+    
     display: block;
   }
 
@@ -105,7 +105,7 @@ align-items: center;
     display: none;
   }
   
-  }
+  
 
 }
 .ingrid-icon span {
