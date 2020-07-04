@@ -3,7 +3,7 @@ const menu = document.querySelector(".opened__menu");
 const close = document.querySelector(".close-icon");
  
 hamburger.addEventListener("click", function() {
-  event.preventDefault();
+  Event.preventDefault();
   menu.classList.add(".opened__menu--active");
 })
 

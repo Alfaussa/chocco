@@ -9,21 +9,12 @@
 }
 
 .opened__menu--active {
-
- display: none;
-
-
-
- @include tablets {
   display: flex;
   justify-content: center;
-}
-@include phones {
-  display: flex;
-  justify-content: center;
-}
 
 }
+
+
 
 .menu__list--opened{
   display: flex;
