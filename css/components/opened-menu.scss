@@ -7,21 +7,14 @@
   width: 100%;
 
 }
-
 .opened__menu--active {
   display: flex;
-  justify-content: center;
+  text-align: center;
 
 }
 
 
 
-.menu__list--opened{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
 .menu__item {
   margin-right: rem(15px);
   &:last-child {
