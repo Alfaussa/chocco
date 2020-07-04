@@ -78,7 +78,7 @@ align-items: center;
 
 
 .ingrid-icon {
-  width: 20%;
+  width: 86px;
   height: fit-content;
   text-align: center;
   color: white;
@@ -188,4 +188,7 @@ align-items: center;
   @include tablets {
     display: none;
   }
+}
+.noscroll {
+  overflow: hidden;
 }
