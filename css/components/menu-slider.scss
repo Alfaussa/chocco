@@ -96,8 +96,15 @@ align-items: center;
   font-size: rem(15px);
   font-weight: bold;
 
+  &:hover  {
+    .ingrid-menu{
+    display: block;
+  }
+
   @include tablets {
     display: none;
+  }
+  
   }
 
 }
