@@ -622,6 +622,9 @@ body, html {
   fill: white;
   flex-shrink: 0;
 }
+.contacts__phone .contacts__phone__icon-elem:hover {
+  color: red;
+}
 .contacts__phone .contacts__phone__text {
   white-space: nowrap;
 }
@@ -1418,6 +1421,7 @@ body, html {
 }
 .phone-icon:hover {
   opacity: 0.5;
+  fill: red;
 }
 
 .benefits-icon {
@@ -1727,10 +1731,15 @@ body, html {
 }
 
 .ingrid-menu {
+  display: none;
   background-color: white;
   font-weight: bold;
   color: black;
   font-size: 14px;
+}
+
+.ingrid-icon:hover .ingrid-menu {
+  display: block;
 }
 
 .ingrid {
@@ -1739,7 +1748,8 @@ body, html {
 
 .ingrid-item {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .ingridient-icon {
@@ -1751,8 +1761,11 @@ body, html {
 
 .ingid-name {
   display: flex;
+  margin-right: 40px;
 }
 
 .ingrid-weight {
   display: flex;
+  position: absolute;
+  right: 0;
 }
