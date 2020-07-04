@@ -51,14 +51,14 @@ align-items: center;
 
 .menu-image {
   margin-bottom: rem(80px);
-  width: 70%;
+  width: 90%;
   margin-right: rem(30px);
   align-items: center;
 
   @include tablets {
     display: flex;
     margin-right: 0;
-    width: 90%;
+    width: 70%;
     margin-bottom: rem(5px);
     justify-content: center;
   }

@@ -1564,7 +1564,7 @@ body, html {
 
 .menu-image {
   margin-bottom: 4.4444444444rem;
-  width: 70%;
+  width: 90%;
   margin-right: 1.6666666667rem;
   align-items: center;
 }
@@ -1572,7 +1572,7 @@ body, html {
   .menu-image {
     display: flex;
     margin-right: 0;
-    width: 90%;
+    width: 70%;
     margin-bottom: 0.2777777778rem;
     justify-content: center;
   }
