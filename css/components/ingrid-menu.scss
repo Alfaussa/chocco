@@ -1,8 +1,16 @@
 .ingrid-menu {
+
+  display: none;
   background-color: white;
   font-weight: bold;
   color: black;
   font-size: 14px;
+}
+
+.ingrid-icon:hover  {
+  .ingrid-menu{
+  display: block;
+  }
 }
 .ingrid {
   padding: 15px;
@@ -10,7 +18,8 @@
 
 .ingrid-item {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
 }
 .ingridient-icon {
   display: flex;
@@ -20,7 +29,10 @@
 }
 .ingid-name{
   display: flex;
+  margin-right: 40px;
 }
 .ingrid-weight{
   display: flex;
+  position: absolute;
+  right: 0;
 }
