@@ -1752,6 +1752,9 @@ body, html {
   position: relative;
   margin-bottom: 10px;
 }
+.ingrid-item:last-child {
+  margin-bottom: 0px;
+}
 
 .ingridient-icon {
   display: flex;
