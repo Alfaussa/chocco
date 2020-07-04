@@ -29,6 +29,15 @@ align-items: center;
   }
   
 }
+.slider-item {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+      }
+}
+
 
 .menu-desc-item {
   display: flex;
