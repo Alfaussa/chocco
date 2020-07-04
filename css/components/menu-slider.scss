@@ -22,6 +22,7 @@ align-items: center;
 
   @include tablets {
     justify-content: center;
+    margin-bottom: 17px;
   }
 }
 
@@ -30,7 +31,7 @@ align-items: center;
 
   @include tablets {
     display: flex;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -42,7 +43,7 @@ align-items: center;
     display: flex;
     margin-right: 0;
     width: 80%;
-    margin-bottom: rem(10px);
+    margin-bottom: rem(45px);
 
   }
 }
@@ -77,16 +78,17 @@ align-items: center;
 }
 .menu__title {
 
-  font-size: rem(25px);
+  font-size: rem(36px);
   line-height: 1;
   text-align: start;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: rem(20px);
   text-transform: uppercase;
   color: #000;
 
   @include tablets {
-    font-size: rem(18px);
+    font-size: rem(24px);
+    text-align: center;
   }
 
   @include phones {
@@ -97,10 +99,23 @@ align-items: center;
 .menu-desc-text {
   color: #666666;
   width: 88%;
+  line-height: 1.4;
 
   @include tablets {
     font-size: rem(16px);
   }
+}
+.menu-desc-text p {
+  margin-bottom: 0;
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.menu-desc-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-desc-detail__price {
