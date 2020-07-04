@@ -1,0 +1,26 @@
+.ingrid-menu {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+.ingrid {
+  padding: 15px;
+}
+
+.ingrid-item {
+  display: flex;
+  justify-content: space-between;
+}
+.ingridient-icon {
+  display: flex;
+  width: rem(30px);
+  height: rem(30px);
+  margin-right: 15px;
+}
+.ingid-name{
+  display: flex;
+}
+.ingrid-weight{
+  display: flex;
+}

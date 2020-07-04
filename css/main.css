@@ -1540,6 +1540,16 @@ body, html {
   }
 }
 
+.slider-item {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider-item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .menu-desc-item {
   display: flex;
   margin-bottom: 0.5555555556rem;
@@ -1714,4 +1724,35 @@ body, html {
 
 .noscroll {
   overflow: hidden;
+}
+
+.ingrid-menu {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+
+.ingrid {
+  padding: 15px;
+}
+
+.ingrid-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingridient-icon {
+  display: flex;
+  width: 1.6666666667rem;
+  height: 1.6666666667rem;
+  margin-right: 15px;
+}
+
+.ingid-name {
+  display: flex;
+}
+
+.ingrid-weight {
+  display: flex;
 }
