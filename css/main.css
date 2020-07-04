@@ -1450,8 +1450,8 @@ body, html {
 }
 
 .arrow {
-  width: 1.3888888889rem;
-  height: 1.3888888889rem;
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
 }
 
 .bar {
@@ -1479,14 +1479,7 @@ body, html {
 
 .opened__menu--active {
   display: flex;
-  justify-content: center;
-}
-
-.menu__list--opened {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  text-align: center;
 }
 
 .menu__item {
@@ -1525,6 +1518,18 @@ body, html {
     flex-direction: column;
   }
 }
+.menu-section:before {
+  position: absolute;
+  content: url("../decor/menubarsleafbg.png");
+  right: 0;
+  top: 45%;
+}
+.menu-section:after {
+  position: absolute;
+  content: url("../decor/menu-bar-berry.png");
+  right: 0;
+  top: 49%;
+}
 
 .slider {
   display: flex;
@@ -1543,7 +1548,7 @@ body, html {
 @media screen and (max-width: 768px) {
   .menu-desc-item {
     justify-content: center;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1559,23 +1564,24 @@ body, html {
 
 .menu-image {
   margin-bottom: 4.4444444444rem;
+  width: 90%;
+  margin-right: 1.6666666667rem;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .menu-image {
     display: flex;
     margin-right: 0;
-    width: 80%;
-    margin-bottom: 2.5rem;
+    width: 90%;
+    margin-bottom: 0.2777777778rem;
+    justify-content: center;
   }
 }
 
-.menu-img {
-  margin-right: 4.7222222222rem;
-}
 @media screen and (max-width: 768px) {
   .menu-img {
-    margin-right: 0;
-    width: 80%;
+    margin: 0 1.3888888889rem 0 0.5555555556rem;
+    width: 70%;
   }
 }
 
@@ -1615,6 +1621,7 @@ body, html {
   .menu__title {
     font-size: 1.3333333333rem;
     text-align: center;
+    margin-bottom: 0.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1625,20 +1632,12 @@ body, html {
 
 .menu-desc-text {
   color: #666666;
-  width: 88%;
   line-height: 1.4;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .menu-desc-text {
     font-size: 0.8888888889rem;
-  }
-}
-
-.menu-desc-text p {
-  margin-bottom: 0;
-}
-@media screen and (max-width: 768px) {
-  .menu-desc-text p {
     text-align: center;
   }
 }
@@ -1678,10 +1677,38 @@ body, html {
   margin-right: 10px;
 }
 
-.arrow-left {
-  display: flex;
+.arrow-left--resp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .arrow-left--resp {
+    display: flex;
+  }
+}
+
+.arrow-right--resp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .arrow-right--resp {
+    display: flex;
+  }
 }
 
 .arrow-left {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .arrow-left {
+    display: none;
+  }
+}
+
+.arrow-right {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .arrow-right {
+    display: none;
+  }
 }
