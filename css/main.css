@@ -1610,11 +1610,11 @@ body, html {
   font-size: 0.8333333333rem;
   font-weight: bold;
 }
-.ingrid-icon:hover .ingrid-menu {
+.ingrid-icon:hover + .ingrid-menu {
   display: block;
 }
 @media screen and (max-width: 768px) {
-  .ingrid-icon:hover {
+  .ingrid-icon {
     display: none;
   }
 }
@@ -1739,6 +1739,7 @@ body, html {
   font-weight: bold;
   color: black;
   font-size: 14px;
+  position: absolute;
 }
 
 .ingrid {
