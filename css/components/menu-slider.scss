@@ -96,6 +96,8 @@ align-items: center;
   font-size: rem(15px);
   font-weight: bold;
 
+  
+
   &:hover + .ingrid-menu{ 
     
     display: block;
@@ -105,8 +107,6 @@ align-items: center;
     display: none;
   }
   
-  
-
 }
 .ingrid-icon span {
   color: white;
@@ -207,4 +207,8 @@ align-items: center;
 }
 .noscroll {
   overflow: hidden;
+}
+
+.slider-bar {
+  display: none;
 }

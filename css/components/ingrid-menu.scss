@@ -7,7 +7,25 @@
   font-size: 14px;
   position: absolute;
   right: 9%;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    left:-1%;
+  }
+
+
+  
+  
 }
+.ingrid-menu:before:hover + .ingrid-menu {
+  display: block;
+}
+
+
 
 
 .ingrid {
