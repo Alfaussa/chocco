@@ -53,12 +53,17 @@
   margin-right: rem(6px);
   fill: white;
   flex-shrink: 0;
+  &:hover {
+   color: red;
+    
+  }
   
 }
 .contacts__phone__text {
   white-space: nowrap;
   &:hover {
     opacity: 0.5;
+    
   }
   
   

@@ -1,0 +1,214 @@
+.menu-section {
+  background-color: #f8fafa;
+  flex-direction: row;
+  @include tablets {
+    flex-direction: column;
+   
+  }
+  &:before {
+    position: absolute;
+    content: url("../decor/menubarsleafbg.png");
+    right: 0;
+    top: 45%;
+  }
+
+  &:after  {
+    position: absolute;
+    content: url("../decor/menu-bar-berry.png");
+    right: 0;
+    top: 49%;
+    }
+}
+
+.slider {
+  display: flex;
+
+@include tablets {
+flex-direction: column;
+align-items: center;
+  }
+  
+}
+.slider-item {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+      }
+}
+
+
+.menu-desc-item {
+  display: flex;
+  margin-bottom: rem(10px);
+
+  @include tablets {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
+
+.menu-desc {
+  display: flex;
+
+  @include tablets {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.menu-image {
+  margin-bottom: rem(80px);
+  width: 90%;
+  margin-right: rem(30px);
+  align-items: center;
+
+  @include tablets {
+    display: flex;
+    margin-right: 0;
+    width: 70%;
+    margin-bottom: rem(5px);
+    justify-content: center;
+  }
+  
+
+}
+
+.menu-img {
+  
+  
+  @include tablets {
+    margin: 0 rem(25px) 0 rem(10px);
+    width: 70%;
+  }
+
+}
+
+
+.ingrid-icon {
+  width: 86px;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  background-color: $blue;
+  border-radius: rem(5px);
+  font-size: rem(15px);
+  font-weight: bold;
+
+  
+
+  &:hover + .ingrid-menu{ 
+    
+    display: block;
+  }
+
+  @include tablets {
+    display: none;
+  }
+  
+}
+.ingrid-icon span {
+  color: white;
+  font-weight: bold;
+}
+.menu__title {
+
+  font-size: rem(36px);
+  line-height: 1;
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: rem(20px);
+  text-transform: uppercase;
+  color: #000;
+
+  @include tablets {
+    font-size: rem(24px);
+    text-align: center;
+    margin-bottom: rem(5px);
+  }
+
+  @include phones {
+    font-size: rem(16px);
+  }
+}
+
+.menu-desc-text {
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 0;
+
+  @include tablets {
+    font-size: rem(16px);
+    text-align: center;
+  }
+}
+
+
+
+.menu-desc-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-desc-detail__price {
+  font-size: rem(40px);
+  color: #151515;
+  font-weight: 300;
+
+  @include tablets {
+    font-size: rem(30px);
+  }
+}
+
+.menu-desc-detail {
+  align-items: center;
+  margin-right: rem(40px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ingrid-icon span {
+  color: white;
+  font-weight: bold;
+}
+.detail {
+  display: flex;
+  margin-right: 10px;
+}
+.arrow-left--resp {
+  display: none;
+  @include tablets {
+    display: flex;
+  }
+}
+.arrow-right--resp {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+.arrow-left {
+  display: flex;
+  @include tablets {
+    display: none;
+  }
+}
+.arrow-right {
+  display: flex;
+
+  @include tablets {
+    display: none;
+  }
+}
+.noscroll {
+  overflow: hidden;
+}
+
+.slider-bar {
+  display: none;
+}
