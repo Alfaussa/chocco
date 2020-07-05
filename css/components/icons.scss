@@ -6,6 +6,7 @@
 
   &:hover {
     opacity: 0.5;
+    fill:red;
   }
 
 }
@@ -35,4 +36,21 @@
   width: rem(15px);
   height: rem(15px);
   margin-right: rem (5px);
+}
+.arrow {
+  width: rem(40px);
+  height: rem(40px);
+}
+
+.bar {
+  width: rem(60px);
+  height: rem(60px);
+  fill: white;
+  margin-bottom: 0ßpx;
+  padding-top: 5px;
+}
+.close {
+  width: rem(15px);
+  height: rem(15px);
+  fill: white;
 }
