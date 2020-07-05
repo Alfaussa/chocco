@@ -1746,16 +1746,7 @@ body, html {
   position: absolute;
   right: 9%;
 }
-.ingrid-menu:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 230px;
-  height: 250px;
-  left: -1%;
-}
-
-.ingrid-menu:before:hover + .ingrid-menu {
+.ingrid-menu:hover {
   display: block;
 }
 
