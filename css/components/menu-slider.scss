@@ -10,14 +10,14 @@
     position: absolute;
     content: url("../decor/menubarsleafbg.png");
     right: 0;
-    top: 45%;
+    top: 38%;
   }
 
   &:after  {
     position: absolute;
     content: url("../decor/menu-bar-berry.png");
     right: 0;
-    top: 49%;
+    top: 42%;
     }
 }
 .bx-wrapper {
@@ -72,7 +72,7 @@ align-items: center;
   @include tablets {
     display: flex;
     margin-right: 0;
-    width: 70%;
+    width: 90%;
     margin-bottom: rem(5px);
     justify-content: center;
   }
@@ -117,7 +117,7 @@ align-items: center;
   color: white;
   font-weight: bold;
 }
-.menu__title {
+.menu__title h3 {
 
   font-size: rem(36px);
   line-height: 1;
@@ -199,10 +199,14 @@ align-items: center;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+
+  @include tablets {
+    top: 30%;
+  }
 }
 .arrow-left{
-  left: 0;
+  left: -5%;
 }
 .arrow-right{
-  right: 0;
+  right: -5%;
 }
