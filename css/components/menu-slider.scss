@@ -1,6 +1,7 @@
 .menu-section {
   background-color: #f8fafa;
   flex-direction: row;
+  align-items: center;
   @include tablets {
     flex-direction: column;
    
@@ -28,7 +29,7 @@
   display: flex;
 
 @include tablets {
-flex-direction: column;
+
 align-items: center;
   }
   
