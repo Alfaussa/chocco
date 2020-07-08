@@ -211,5 +211,11 @@
 			C496.831,302.836,495.088,347.977,456.082,380.518z"/>
   </symbol>
 
-	
+
+<symbol id="arrDown" viewBox="0 0 12 9">
+ <path class="st0" d="M5.51 7.14L1.01 1.14L10.01 1.14L5.51 7.14Z"/>
+  </symbol>
+<symbol id="arrUp" viewBox="0 0 12 9">
+ <path class="st0" d="M5.51 1.86L1.01 7.86L10.01 7.86L5.51 1.86Z"/>
+  </symbol>	
 </svg>
