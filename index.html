@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CHOCCO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -165,12 +166,94 @@
 
         <section class= "section menu-section">
             <div class="container container-menu">
-                <div class="arrow-left">
+                <div class="arrows arrow-left">
                     <svg class="arrow">
                         <use xlink:href="./sprite.svg#arrow-left"></use>
                     </svg>
-                </div> 
+                </div>
+                <div class="arrows arrow-right">
+                    <svg class="arrow">
+                        <use xlink:href="./sprite.svg#arrow-right"></use>
+                    </svg>
+                </div>
                 <ul class="slider">
+                    <li class="slider-item">
+                        <div class="menu-image">
+                            
+                            <img src="./decor/bar-pic-menu-sec.png" alt="bars" class="menu-img">
+                            
+                        </div>
+                        
+                        <div class="menu-desc">
+                            <div class="menu-desc-list">
+                                <div class="menu-desc-item">
+                                    <div class="ingrid-icon">
+                                        <svg class="bar">
+                                            <use xlink:href="./sprite.svg#bar"></use>
+                                        </svg>
+                                        <span>Состав</span>
+                                    </div>
+                                    <div class="ingrid-menu">
+                                        <ul class="ingrid">
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#grape"></use></svg>
+                                                <div class="ingid-name">Виноград</div>
+                                                <div class="ingrid-weight">25г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#nut"></use></svg>
+                                                <div class="ingid-name">Грецкий орех</div>
+                                                <div class="ingrid-weight">32г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#seed"></use></svg>
+                                                <div class="ingid-name">Кунжутное семя</div>
+                                                <div class="ingrid-weight">20г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#powder"></use></svg>
+                                                <div class="ingid-name">Сухое молоко</div>
+                                                <div class="ingrid-weight">10г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#bee"></use></svg>
+                                                <div class="ingid-name">Зам.сахара</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#beans"></use></svg>
+                                                <div class="ingid-name">Какао бобы</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu__title">
+                                        <h3>Батончик "Морские водоросли"</h3>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <p class="menu-desc-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Калорийность</div> 
+                                        <div class="detail"><b>120ккал</b></div>
+                                    </div>
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Вес</div>
+                                        <div class="detail"><b>98 грамм</b></div>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail menu-desc-detail__price"> 140 P</div>
+                                    <div class="menu-desc-detail"><button type="button" class="button button--theme--green">Заказать</button></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </li>
                     <li class="slider-item">
                         <div class="menu-image">
                             <div class="arrow-left--resp">
@@ -256,7 +339,7 @@
                         </div>
                       
                     </li>
-                    <li class="slider-item slider-bar">
+                    <li class="slider-item">
                         <div class="menu-image">
                             <div class="arrow-left--resp">
                                 <svg class="arrow">
@@ -341,19 +424,367 @@
                         </div>
                       
                     </li>
+                    <li class="slider-item">
+                        <div class="menu-image">
+                            <div class="arrow-left--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-left"></use>
+                                </svg>
+                            </div> 
+                            <img src="./decor/bar-pic-menu-sec.png" alt="bars" class="menu-img">
+                            <div class="arrow-right--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-desc">
+                            <div class="menu-desc-list">
+                                <div class="menu-desc-item">
+                                    <div class="ingrid-icon">
+                                        <svg class="bar">
+                                            <use xlink:href="./sprite.svg#bar"></use>
+                                        </svg>
+                                        <span>Состав</span>
+                                    </div>
+                                    <div class="ingrid-menu">
+                                        <ul class="ingrid">
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#grape"></use></svg>
+                                                <div class="ingid-name">Виноград</div>
+                                                <div class="ingrid-weight">25г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#nut"></use></svg>
+                                                <div class="ingid-name">Грецкий орех</div>
+                                                <div class="ingrid-weight">32г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#seed"></use></svg>
+                                                <div class="ingid-name">Кунжутное семя</div>
+                                                <div class="ingrid-weight">20г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#powder"></use></svg>
+                                                <div class="ingid-name">Сухое молоко</div>
+                                                <div class="ingrid-weight">10г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#bee"></use></svg>
+                                                <div class="ingid-name">Зам.сахара</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#beans"></use></svg>
+                                                <div class="ingid-name">Какао бобы</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu__title">
+                                        <h3>Батончик "Морские водоросли"</h3>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <p class="menu-desc-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Калорийность</div> 
+                                        <div class="detail"><b>120ккал</b></div>
+                                    </div>
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Вес</div>
+                                        <div class="detail"><b>98 грамм</b></div>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail menu-desc-detail__price"> 140 P</div>
+                                    <div class="menu-desc-detail"><button type="button" class="button button--theme--green">Заказать</button></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </li>
+                    <li class="slider-item">
+                        <div class="menu-image">
+                            <div class="arrow-left--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-left"></use>
+                                </svg>
+                            </div> 
+                            <img src="./decor/bar-pic-menu-sec.png" alt="bars" class="menu-img">
+                            <div class="arrow-right--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-desc">
+                            <div class="menu-desc-list">
+                                <div class="menu-desc-item">
+                                    <div class="ingrid-icon">
+                                        <svg class="bar">
+                                            <use xlink:href="./sprite.svg#bar"></use>
+                                        </svg>
+                                        <span>Состав</span>
+                                    </div>
+                                    <div class="ingrid-menu">
+                                        <ul class="ingrid">
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#grape"></use></svg>
+                                                <div class="ingid-name">Виноград</div>
+                                                <div class="ingrid-weight">25г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#nut"></use></svg>
+                                                <div class="ingid-name">Грецкий орех</div>
+                                                <div class="ingrid-weight">32г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#seed"></use></svg>
+                                                <div class="ingid-name">Кунжутное семя</div>
+                                                <div class="ingrid-weight">20г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#powder"></use></svg>
+                                                <div class="ingid-name">Сухое молоко</div>
+                                                <div class="ingrid-weight">10г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#bee"></use></svg>
+                                                <div class="ingid-name">Зам.сахара</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#beans"></use></svg>
+                                                <div class="ingid-name">Какао бобы</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu__title">
+                                        <h3>Батончик "Морские водоросли"</h3>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <p class="menu-desc-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Калорийность</div> 
+                                        <div class="detail"><b>120ккал</b></div>
+                                    </div>
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Вес</div>
+                                        <div class="detail"><b>98 грамм</b></div>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail menu-desc-detail__price"> 140 P</div>
+                                    <div class="menu-desc-detail"><button type="button" class="button button--theme--green">Заказать</button></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </li>
+                    <!---<li class="slider-item slider-bar">
+                        <div class="menu-image">
+                            <div class="arrow-left--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-left"></use>
+                                </svg>
+                            </div> 
+                            <img src="./decor/bar-pic-menu-sec.png" alt="bars" class="menu-img">
+                            <div class="arrow-right--resp">
+                                <svg class="arrow">
+                                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    -->
+                        <div class="menu-desc">
+                            <div class="menu-desc-list">
+                                <div class="menu-desc-item">
+                                    <div class="ingrid-icon">
+                                        <svg class="bar">
+                                            <use xlink:href="./sprite.svg#bar"></use>
+                                        </svg>
+                                        <span>Состав</span>
+                                    </div>
+                                    <div class="ingrid-menu">
+                                        <ul class="ingrid">
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#grape"></use></svg>
+                                                <div class="ingid-name">Виноград</div>
+                                                <div class="ingrid-weight">25г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#nut"></use></svg>
+                                                <div class="ingid-name">Грецкий орех</div>
+                                                <div class="ingrid-weight">32г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#seed"></use></svg>
+                                                <div class="ingid-name">Кунжутное семя</div>
+                                                <div class="ingrid-weight">20г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#powder"></use></svg>
+                                                <div class="ingid-name">Сухое молоко</div>
+                                                <div class="ingrid-weight">10г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#bee"></use></svg>
+                                                <div class="ingid-name">Зам.сахара</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                            <li class="ingrid-item">
+                                                <svg class="ingridient-icon"><use xlink:href="./sprite.svg#beans"></use></svg>
+                                                <div class="ingid-name">Какао бобы</div>
+                                                <div class="ingrid-weight">4г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu__title">
+                                        <h3>Батончик "Морские водоросли"</h3>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <p class="menu-desc-text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Калорийность</div> 
+                                        <div class="detail"><b>120ккал</b></div>
+                                    </div>
+                                    <div class="menu-desc-detail"> 
+                                        <div class="detail">Вес</div>
+                                        <div class="detail"><b>98 грамм</b></div>
+                                    </div>
+                                </div>
+                                <div class="menu-desc-item">
+                                    <div class="menu-desc-detail menu-desc-detail__price"> 140 P</div>
+                                    <div class="menu-desc-detail"><button type="button" class="button button--theme--green">Заказать</button></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </li>
 
 
                 </ul>
-                <div class="arrow-right">
-                    <svg class="arrow">
-                        <use xlink:href="./sprite.svg#arrow-right"></use>
-                    </svg>
-                </div>
+                
             </div>
              
         </section>
-        
-        
+<!-----------------------------------------TEAM section-->        
+        <section class="section team-section">
+            <div class="container">
+                <div class="section__title">Команда</div>
+                 <ul class="team team--version--desktop">
+                     <li class="team__item">
+                         <div class="team__member"><img src="./team/team1.png" alt="team member" class="member__pic"></div>
+                         <button class="team__title" type="button">Борис федорович <svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                         <div class="team__content">
+                             <div class="team__content-block">
+                                 <div class="team__content-title">Главный технолог</div>
+                                 <p class="team__content-text">Отвечает за вкусовые качества и калорийность. </p>
+                             </div>
+                         </div>
+                     </li>
+                     <li class="team__item">
+                        <div class="team__member"><img src="./team/team-item2.png" alt="team member" class="member__pic"></div>
+                        <button class="team__title" type="button">Алла Иванова<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__content-title">Специалист по упаковке </div>
+                                <p class="team__content-text">Автор запоминающегося стиля  наших батончиков. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member"><img src="./team/team-item3.png" alt="team member" class="member__pic"></div>
+                        <button class="team__title" type="button">Кирилл Матросов<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__content-title">Оператор</div>
+                                <p class="team__content-text">С радостью поможет подобрать батончики и оформить заказ. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member"><img src="./team/team-item4.png" alt="team member" class="member__pic"></div>
+                        <button class="team__title" type="button">Мила Рыжова<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__content-title">PR, маркетинг </div>
+                                <p class="team__content-text">По всем вопросам сотрудничества  и рекламы писать только Миле. </p>
+                            </div>
+                        </div>
+                    </li>
+                 </ul>
+                    <!------MOBILE------------------------------>
+                 <ul class="team team--version--mobile">
+                    <li class="team__item">
+                        <button class="team__title" type="button">Борис  Федорович <svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__member"><img src="./team/team1.png" alt="team member" class="member__pic"></div>
+                                <div class="team__content-title">Главный технолог</div>
+                                <p class="team__content-text">Отвечает за вкусовые качества и калорийность. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                       <button class="team__title" type="button">Алла Иванова<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                       <div class="team__content">
+                        
+                           <div class="team__content-block">
+                               <div class="team__member"><img src="./team/team-item2.png" alt="team member" class="member__pic"></div>
+                               <div class="team__content-title">Специалист по упаковке </div>
+                               <p class="team__content-text">Автор запоминающегося стиля  наших батончиков. </p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="team__item">
+                       <button class="team__title" type="button">Кирилл Матросов<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                       <div class="team__content">
+                           <div class="team__content-block">
+                               <div class="team__member"><img src="./team/team-item3.png" alt="team member" class="member__pic"></div>
+                               <div class="team__content-title">Оператор</div>
+                               <p class="team__content-text">С радостью поможет подобрать батончики и оформить заказ. </p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="team__item">
+                       <button class="team__title" type="button">Мила Рыжова<svg class="arr"><use xlink:href="./sprite.svg#arrDown"></use></svg></button>
+                       <div class="team__content">
+                        
+                           <div class="team__content-block">
+                               <div class="team__member"><img src="./team/team-item4.png" alt="team member" class="member__pic"></div>
+                               <div class="team__content-title">PR, маркетинг </div>
+                               <p class="team__content-text">По всем вопросам сотрудничества  и рекламы писать только Миле. </p>
+                           </div>
+                       </div>
+                   </li>
+                 </ul>
+            </div>
+        </section>
+
+
+
+
+
+
 
         <section class="section reviews-section">
             <div class="container">
@@ -361,7 +792,7 @@
                 <div class="reviews">
                     <div class="reviews__display">
                             <ul class="reviews__list">
-                                <li class="reviews-item active">
+                                <li class="reviews-item" data-linked-with="one">
                                     <div class="inner-review">
                                         <div class="reviews__avatar">
                                             <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
@@ -378,7 +809,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews-item">
+                                <li class="reviews-item" data-linked-with="two">
                                     <div class="inner-review">
                                         <div class="reviews__avatar">
                                             <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
@@ -395,7 +826,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews-item">
+                                <li class="reviews-item" data-linked-with="three">
                                     <div class="inner-review">
                                         <div class="reviews__avatar">
                                             <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
@@ -417,21 +848,21 @@
                     </div>
                     <ul class="reviews__switcher">
                         <li class="reviews-switcher__item">
-                            <a href="#" class="reviews-switcher__link">
+                            <a href="#" class="reviews-switcher__link" data-open="one">
                                 
                                     <img src="./reviews/photo1.jpg" alt="smiling girl" class="interactive-avatar__img">
                         
                             </a>
                         </li>
                         <li class="reviews-switcher__item">
-                            <a href="#" class="reviews-switcher__link">
+                            <a href="#" class="reviews-switcher__link" data-open="two">
                               
                                     <img src="./reviews/photo3.jpg" alt="girl" class="interactive-avatar__img">
                                
                             </a>
                         </li>
                         <li class="reviews-switcher__item">
-                            <a href="#" class="reviews-switcher__link">
+                            <a href="#" class="reviews-switcher__link" data-open="three">
                               
                                     <img src="./reviews/photo2.jpg" alt="boy" class="interactive-avatar__img">
                              
@@ -562,7 +993,11 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./1.js"></script>
     <script src="./tabs.js"></script>
+    <script src="./acco.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./slider.js"></script>
 </body>
 </html>

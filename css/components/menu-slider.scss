@@ -19,7 +19,11 @@
     top: 49%;
     }
 }
-
+.bx-wrapper {
+  border: 0;
+  background:transparent;
+  box-shadow: none;
+}
 .slider {
   display: flex;
 
@@ -211,4 +215,18 @@ align-items: center;
 
 .slider-bar {
   display: none;
+}
+
+.arrows {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.arrow-left{
+  left: 0;
+}
+.arrow-right{
+  right: 0;
 }
