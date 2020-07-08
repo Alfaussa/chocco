@@ -1811,42 +1811,6 @@ body, html {
   margin-right: 10px;
 }
 
-.arrow-left--resp {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .arrow-left--resp {
-    display: flex;
-  }
-}
-
-.arrow-right--resp {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .arrow-right--resp {
-    display: flex;
-  }
-}
-
-.arrow-left {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .arrow-left {
-    display: none;
-  }
-}
-
-.arrow-right {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .arrow-right {
-    display: none;
-  }
-}
-
 .noscroll {
   overflow: hidden;
 }

@@ -183,32 +183,7 @@ align-items: center;
   display: flex;
   margin-right: 10px;
 }
-.arrow-left--resp {
-  display: none;
-  @include tablets {
-    display: flex;
-  }
-}
-.arrow-right--resp {
-  display: none;
 
-  @include tablets {
-    display: flex;
-  }
-}
-.arrow-left {
-  display: flex;
-  @include tablets {
-    display: none;
-  }
-}
-.arrow-right {
-  display: flex;
-
-  @include tablets {
-    display: none;
-  }
-}
 .noscroll {
   overflow: hidden;
 }
