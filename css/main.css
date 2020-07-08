@@ -1638,13 +1638,13 @@ body, html {
   position: absolute;
   content: url("../decor/menubarsleafbg.png");
   right: 0;
-  top: 45%;
+  top: 38%;
 }
 .menu-section:after {
   position: absolute;
   content: url("../decor/menu-bar-berry.png");
   right: 0;
-  top: 49%;
+  top: 42%;
 }
 
 .bx-wrapper {
@@ -1703,7 +1703,7 @@ body, html {
   .menu-image {
     display: flex;
     margin-right: 0;
-    width: 70%;
+    width: 90%;
     margin-bottom: 0.2777777778rem;
     justify-content: center;
   }
@@ -1742,7 +1742,7 @@ body, html {
   font-weight: bold;
 }
 
-.menu__title {
+.menu__title h3 {
   font-size: 2rem;
   line-height: 1;
   text-align: start;
@@ -1752,14 +1752,14 @@ body, html {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .menu__title {
+  .menu__title h3 {
     font-size: 1.3333333333rem;
     text-align: center;
     margin-bottom: 0.2777777778rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .menu__title {
+  .menu__title h3 {
     font-size: 0.8888888889rem;
   }
 }
@@ -1826,13 +1826,18 @@ body, html {
   transform: translateY(-50%);
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .arrows {
+    top: 30%;
+  }
+}
 
 .arrow-left {
-  left: 0;
+  left: -5%;
 }
 
 .arrow-right {
-  right: 0;
+  right: -5%;
 }
 
 .ingrid-menu {
@@ -1842,7 +1847,7 @@ body, html {
   color: black;
   font-size: 14px;
   position: absolute;
-  right: 9%;
+  right: 19%;
 }
 .ingrid-menu:hover {
   display: block;
@@ -1909,10 +1914,20 @@ body, html {
   max-width: 14.4444444444rem;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
 
 .team__member {
   height: 15.5555555556rem;
   margin-bottom: 1.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    margin-right: 0;
+  }
 }
 
 .team__title {
@@ -1922,6 +1937,7 @@ body, html {
   border: none;
   outline: none;
   background: #fff;
+  font-weight: 700;
 }
 
 .team__content-block {
@@ -1929,12 +1945,23 @@ body, html {
 }
 
 .member__pic {
-  width: 224px;
-  height: 280px;
+  width: 12.4444444444rem;
+  height: 15.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .member__pic {
+    width: 70%;
+    height: 70%;
+    margin-right: 0;
+  }
 }
 
-.team__content-block .p {
-  font-size: 16px;
+.team__content-title {
+  font-weight: 400;
+}
+
+.team__content-text {
+  font-size: 15px;
   color: #666666;
   font-weight: 300;
 }

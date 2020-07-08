@@ -24,10 +24,19 @@
   margin-right: rem(20px);
   max-width: rem(260px);
   position: relative;
+  
+  @include tablets {
+    margin-right: 0;
+   }
 }
 .team__member {
   height: rem(280px);
-  margin-bottom: rem(20px);;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    margin-right: 0;
+   }
+
 }
 .team__title {
   color: #323232;
@@ -36,16 +45,31 @@
   border: none;
   outline: none;
   background:#fff;
+  font-weight: 700;
 }
 .team__content-block {
   padding-bottom: rem(5px);
 }
 .member__pic {
-  width: 224px;
-  height: 280px;
+  width: rem(224px);
+  height: rem(280px);
+
+
+  @include tablets {
+    width: 70%;
+    height: 70%;
+    margin-right: 0;
+  }
+
+  
 }
-.team__content-block .p {
-font-size: 16px;
+
+.team__content-title {
+  font-weight: 400;
+}
+
+.team__content-text {
+font-size: 15px;
 color: #666666;
 font-weight: 300;
 }
