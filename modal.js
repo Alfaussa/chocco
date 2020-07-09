@@ -29,17 +29,13 @@ $('.form').submit((e)=> {
   
   if(isValid) {
    const request = $.ajax({
-      url: "https://alfaussa.github.io/chocco/",
+      url: "https://webdev-api.loftschool.com/sendmail",
       method: "post",
       data: {
         name: name.val(),
         phone: phone.val(),
         comment: comment.val(),
         to: to.val()
-      },
-        
-      error: data => {
-        
       },
     });
 
