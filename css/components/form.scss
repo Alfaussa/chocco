@@ -1,4 +1,4 @@
-.form {
+.form__cont {
   display: flex;
   margin-bottom: rem(50px);
   
@@ -52,6 +52,9 @@
  // border: solid rem(3px) 
   border: solid rem(3px) transparent;
 
+  &.input-error{
+    border-color: hotpink;
+  }
   &:focus {
   border-color: #dee2bd;
   outline: none;
