@@ -1162,18 +1162,18 @@ body, html {
   object-fit: cover;
 }
 
-.form {
+.form__cont {
   display: flex;
   margin-bottom: 2.7777777778rem;
 }
 @media screen and (max-width: 768px) {
-  .form {
+  .form__cont {
     padding: 0 19%;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
-  .form {
+  .form__cont {
     font-size: 12px;
     padding: 0;
     flex-direction: column;
@@ -1221,6 +1221,9 @@ body, html {
   border: 0;
   padding: 1rem 0.6111111111rem;
   border: solid 0.1666666667rem transparent;
+}
+.form__input.input-error {
+  border-color: hotpink;
 }
 .form__input:focus {
   border-color: #dee2bd;
