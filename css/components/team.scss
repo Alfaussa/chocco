@@ -34,8 +34,9 @@
   margin-bottom: rem(20px);
 
   @include tablets {
-    margin-right: 0;
-   }
+    height: auto;
+    margin-left: 13px;
+  }
 
 }
 .team__title {
@@ -55,11 +56,7 @@
   height: rem(280px);
 
 
-  @include tablets {
-    width: 70%;
-    height: 70%;
-    margin-right: 0;
-  }
+
 
   
 }
@@ -93,4 +90,11 @@ font-weight: 300;
   margin-bottom: 10px;
   flex: initial;
   margin-right: 0;
+}
+
+.team__item.active {
+
+  .arr{
+    transform: rotate(-180deg);
+  }
 }
