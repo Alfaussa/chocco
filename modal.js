@@ -59,7 +59,7 @@ $('.form').submit((e)=> {
    }
 });
 
-$('.app-submit-btn').click(e => { 
+$('.submit-close').click(e => { 
   e.preventDefault();
 
   $.fancybox.close();
