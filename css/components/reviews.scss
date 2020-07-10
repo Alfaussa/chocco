@@ -55,7 +55,8 @@
 
   @include tablets {
     width: rem(130px);
-    height: rem(130px)
+    height: rem(130px);
+    margin-bottom: 0;
   }
 }
 .interactive-avatar__img {
@@ -152,6 +153,11 @@ justify-content: center;
 }
 .inner-review {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 .reviews-switcher__item {
   width: rem(80px);
@@ -169,4 +175,12 @@ justify-content: center;
 }
 .reviews-switcher__item.active{
   background-color: #0f5a47;
+}
+.avatar__img{
+  width: rem(200px);
+  height: rem(250px);
+  @include tablets {
+    width: rem(150px);
+    height: rem(150px);
+  }
 }

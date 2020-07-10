@@ -6,7 +6,7 @@
   color: black;
   font-size: 14px;
   position: absolute;
-  right: 19%;
+  z-index: 10;
 
   &:hover {
     display: block;

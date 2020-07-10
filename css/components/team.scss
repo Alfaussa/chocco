@@ -1,3 +1,9 @@
+.team-section{
+  @include tablets {
+   min-height: rem(500px);
+   max-height: rem(650px);
+   }
+}
 .team {
   display: flex;
   justify-content: space-between;

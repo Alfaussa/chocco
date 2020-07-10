@@ -30,14 +30,12 @@ const scrollViewport = (direction) => {
   const prevSection = activeSection.prev();
 
   if (direction == "next" && nextSection.length) {
-    perfomTransition(nextSection.index())
+    perfomTransition(nextSection.index());
   }
 
   if (direction == "prev" && prevSection.length) {
-    perfomTransition(prevSection.index())
+    perfomTransition(prevSection.index());
   }
-
-
 };
 
 $(window).on("wheel", (e) => {
@@ -51,5 +49,22 @@ $(window).on("wheel", (e) => {
   if (deltaY < 0) {
 
     scrollViewport("prev");
+  }
+});
+
+$(window).on("keydown", (e) =>{
+
+  const tagName = e.target.tagName.toLowerCase();
+
+  if (tagName !== )
+
+  switch (e.keyCode) {
+    case 38:
+      scrollViewport("prev");
+      break;
+  
+      case 40:
+      scrollViewport("next");
+      break;
   }
 });
