@@ -2052,6 +2052,7 @@ body, html {
 .products-menu__title {
   position: relative;
   width: 5.5555555556rem;
+  background-color: rgba(47, 50, 52, 0.9);
 }
 
 .products-menu__content {
@@ -2087,4 +2088,5 @@ body, html {
 
 .products-menu__image {
   height: 100vh;
+  filter: opacity(0.7);
 }
