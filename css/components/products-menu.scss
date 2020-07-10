@@ -25,6 +25,7 @@
 .products-menu__title {
   position: relative;
   width: rem(100px);
+  background-color: rgba(47, 50, 52, 0.9);
 }
 
 .products-menu__content {
@@ -57,4 +58,5 @@ font-size: 30px;
 }
 .products-menu__image{
   height: 100vh;
+  filter: opacity(.7);
 }
