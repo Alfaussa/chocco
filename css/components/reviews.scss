@@ -177,10 +177,9 @@ justify-content: center;
   background-color: #0f5a47;
 }
 .avatar__img{
-  width: rem(200px);
-  height: rem(250px);
-  @include tablets {
-    width: rem(150px);
-    height: rem(150px);
-  }
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+  
