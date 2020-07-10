@@ -714,6 +714,7 @@ body, html {
   line-height: 1;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 .button--theme--white {
   background: #fff;
@@ -987,6 +988,7 @@ body, html {
   .reviews__avatar {
     width: 7.2222222222rem;
     height: 7.2222222222rem;
+    margin-bottom: 0;
   }
 }
 
@@ -1104,6 +1106,13 @@ body, html {
 .inner-review {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .inner-review {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 
 .reviews-switcher__item {
   width: 4.4444444444rem;
@@ -1121,6 +1130,17 @@ body, html {
 
 .reviews-switcher__item.active {
   background-color: #0f5a47;
+}
+
+.avatar__img {
+  width: 11.1111111111rem;
+  height: 13.8888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .avatar__img {
+    width: 8.3333333333rem;
+    height: 8.3333333333rem;
+  }
 }
 
 .interactive-avatar {
@@ -1160,6 +1180,11 @@ body, html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .interactive-avatar__img {
+    width: 5.5555555556rem;
+  }
 }
 
 .form__cont {
@@ -1274,6 +1299,15 @@ body, html {
 .form__btns {
   display: flex;
   justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .radio {
@@ -1678,6 +1712,7 @@ body, html {
 .menu-desc-item {
   display: flex;
   margin-bottom: 0.5555555556rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .menu-desc-item {
@@ -1850,7 +1885,7 @@ body, html {
   color: black;
   font-size: 14px;
   position: absolute;
-  right: 19%;
+  z-index: 10;
 }
 .ingrid-menu:hover {
   display: block;
@@ -1885,6 +1920,13 @@ body, html {
   display: flex;
   position: absolute;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .team-section {
+    min-height: 27.7777777778rem;
+    max-height: 36.1111111111rem;
+  }
 }
 
 .team {
@@ -1995,7 +2037,7 @@ body, html {
   display: none;
 }
 .modal.error-modal .modal__content {
-  color: red;
+  color: black;
 }
 .modal.fancybox-content {
   padding: 0 !important;
@@ -2006,14 +2048,16 @@ body, html {
 
 .modal__container {
   background: #ffffff;
-  padding: 35px 60px;
+  padding: 30px 55px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .modal__content {
   color: #000;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .close-icon + .submit-close {

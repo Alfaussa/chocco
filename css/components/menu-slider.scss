@@ -47,6 +47,7 @@ align-items: center;
 .menu-desc-item {
   display: flex;
   margin-bottom: rem(10px);
+  position: relative;
 
   @include tablets {
     justify-content: center;
