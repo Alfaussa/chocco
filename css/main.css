@@ -1133,14 +1133,10 @@ body, html {
 }
 
 .avatar__img {
-  width: 11.1111111111rem;
-  height: 13.8888888889rem;
-}
-@media screen and (max-width: 768px) {
-  .avatar__img {
-    width: 8.3333333333rem;
-    height: 8.3333333333rem;
-  }
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .interactive-avatar {
@@ -1887,6 +1883,7 @@ input[type=number] {
   font-size: 14px;
   position: absolute;
   z-index: 10;
+  left: 86px;
 }
 .ingrid-menu:hover {
   display: block;
