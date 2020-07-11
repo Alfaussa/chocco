@@ -937,6 +937,7 @@ body, html {
   margin-bottom: 2.7777777778rem;
   display: flex;
   justify-content: center;
+  min-height: 70vh;
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
@@ -1036,6 +1037,7 @@ body, html {
   .review__text {
     font-size: 12px;
     text-align: center;
+    margin-bottom: 0.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1139,6 +1141,12 @@ body, html {
   object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews-section {
+    min-height: 100vh;
+  }
+}
+
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
@@ -1176,11 +1184,6 @@ body, html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  .interactive-avatar__img {
-    width: 5.5555555556rem;
-  }
 }
 
 .form__cont {
@@ -1922,8 +1925,7 @@ input[type=number] {
 
 @media screen and (max-width: 768px) {
   .team-section {
-    min-height: 27.7777777778rem;
-    max-height: 36.1111111111rem;
+    min-height: 100vh;
   }
 }
 
