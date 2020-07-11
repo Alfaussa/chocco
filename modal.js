@@ -62,5 +62,10 @@ $('.form').submit((e)=> {
 $('.button-close').click(e => { 
   e.preventDefault();
 
+  const form = $(e.currentTarget);
+
   $.fancybox.close();
+  
+  $('#form')[0].reset();
 });
+

@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-        <section data-section-id="hero" class="hero">
+        <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./icons/logo.png" alt="chocco logo" class="logo">
@@ -105,7 +105,7 @@
         </section>
         </section>
         <!------------------------Features section-->
-        <section data-section-id="features" class="section features-section">
+        <section data-sidemenu-theme="black" data-section-id="features" class="section features-section">
             <div class="container">
                 <div class="headline">
                     <h2 class="section__title headline__title ">Почему CHOCCO</h2>
@@ -165,7 +165,7 @@
             </div>
         </section>
         <!------------------------Slider-menu section-->
-        <section data-section-id="menu" class="section menu-section">
+        <section data-sidemenu-theme="black" data-section-id="menu" class="section menu-section">
             <div class="container container-menu">
                 <div class="arrows arrow-left">
                     <svg class="arrow">
@@ -362,7 +362,7 @@
             </div>
         </section>
         <!------------------------Team section-->
-        <section data-section-id="team" lass="section team-section">
+        <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
             <div class="container">
                 <div class="section__title">Команда</div>
                 <ul class="team team--version--desktop">
@@ -483,7 +483,7 @@
             </div>
         </section>
         <!------------------------Menu section-->
-        <section data-section-id="products" class="section products-menu-section">
+        <section data-sidemenu-theme="white" data-section-id="products" class="section products-menu-section">
             <h1 class="section__title products-menu-section__title">Меню</h1>
             <ul class="products-menu">
                 <li class="products-menu__item">
@@ -537,7 +537,7 @@
 
         </section>
         <!------------------------Review section-->
-        <section data-section-id="reviews" class="section reviews-section">
+        <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
             <div class="container">
                 <h2 class="section__title section__title--centered ">Отзывы</h2>
                 <div class="reviews">
@@ -623,10 +623,10 @@
             </div>
         </section>
         <!------------------------Form section-->
-        <section data-section-id="order" class=" section order-section section--font-color--green">
+        <section data-sidemenu-theme="white" data-section-id="order" class=" section order-section section--font-color--green">
             <div class="container">
                 <h2 class="section__title section__title--green section__title--centered">Закажите доставку</h2>
-                <form class="form">
+                <form class="form" id= "form">
                     <div class="form__cont">
                         <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__col">
@@ -709,14 +709,14 @@
                             Сообщение отправлено
                         </div>
                         <div class="modal__button-container">
-                            <button type="submit" class="button button--theme--green button-close">Закрыть</button>
+                            <button type="reset" class="button button--theme--green button-close">Закрыть</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!------------------------Map section-->
-        <section data-section-id="map" class="map section">
+        <section data-sidemenu-theme="white" data-section-id="map" class="map section">
             <div class="map-image"><img src="./decor/map-bg.png" alt="map" class="map-img"></div>
             <footer class="footer">
                 <div class="container footer__container">
@@ -750,15 +750,16 @@
         </section>
     </div>
     </div>
-    <nav class="fixed-menu">
+    <nav class="fixed-menu fixed-menu--shadowed">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+            
+            <li class="fixed-menu__item fixed-menu__item--active"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="features" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="menu" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="products" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="features" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link"></a></li>
             <li class="fixed-menu__item"><a href="" data-scroll-to="map" class="fixed-menu__link"></a></li>
         </ul>

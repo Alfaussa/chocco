@@ -1,7 +1,7 @@
-.team-section{
-  @include tablets {
-   min-height: 100vh;
-   }
+.team-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .team {
   display: flex;
