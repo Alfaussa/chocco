@@ -718,7 +718,7 @@ body, html {
 }
 .button--theme--white {
   background: #fff;
-  color: 0;
+  color: #0b4d3c;
   align-self: flex-start;
 }
 @media screen and (max-width: 768px) {

@@ -11,7 +11,7 @@
 
   &--theme--white {
     background: #fff;
-    color: green($color: #000000);
+    color: $darkgreen;
     align-self: flex-start;
 
     @include tablets  {
