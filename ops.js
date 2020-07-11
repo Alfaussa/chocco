@@ -28,12 +28,12 @@ const perfomTransition = (sectionEq) => {
 
    sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
 
-   sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings.removeClass("fixed-menu__item--active");
+   sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
 
    setTimeout(() => {
     inScroll = false;
 
-    sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings.removeClass("fixed-menu__item--active");
+    sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
     
    }, 1300);
  }
