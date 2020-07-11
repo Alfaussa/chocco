@@ -11,7 +11,7 @@ $z-fixed-menu:100;
 
 @import "layout/media";
 
-@import url("./layout/fonts.css");
+@import "layout/fonts";
 @import "normalize";
 
 
@@ -40,3 +40,7 @@ $z-fixed-menu:100;
 @import "components/opened-menu";
 @import "components/menu-slider";
 @import "components/ingrid-menu";
+@import "components/team";
+@import "components/modal";
+@import "components/products-menu";
+

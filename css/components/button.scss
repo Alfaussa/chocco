@@ -7,10 +7,11 @@
   line-height: 1;
   text-decoration: none;
   border: none;
+  outline: none;
 
   &--theme--white {
     background: #fff;
-    color: green($color: #000000);
+    color: $darkgreen;
     align-self: flex-start;
 
     @include tablets  {

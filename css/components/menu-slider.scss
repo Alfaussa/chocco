@@ -1,6 +1,7 @@
 .menu-section {
   background-color: #f8fafa;
   flex-direction: row;
+  align-items: center;
   @include tablets {
     flex-direction: column;
    
@@ -9,22 +10,26 @@
     position: absolute;
     content: url("../decor/menubarsleafbg.png");
     right: 0;
-    top: 45%;
+    top: 33%;
   }
 
   &:after  {
     position: absolute;
     content: url("../decor/menu-bar-berry.png");
     right: 0;
-    top: 49%;
+    top: 36%;
     }
 }
-
+.bx-wrapper {
+  border: 0;
+  background:transparent;
+  box-shadow: none;
+}
 .slider {
   display: flex;
 
 @include tablets {
-flex-direction: column;
+
 align-items: center;
   }
   
@@ -42,6 +47,7 @@ align-items: center;
 .menu-desc-item {
   display: flex;
   margin-bottom: rem(10px);
+  position: relative;
 
   @include tablets {
     justify-content: center;
@@ -63,11 +69,12 @@ align-items: center;
   width: 90%;
   margin-right: rem(30px);
   align-items: center;
+  display: flex;
 
   @include tablets {
     display: flex;
     margin-right: 0;
-    width: 70%;
+    width: 90%;
     margin-bottom: rem(5px);
     justify-content: center;
   }
@@ -112,7 +119,7 @@ align-items: center;
   color: white;
   font-weight: bold;
 }
-.menu__title {
+.menu__title h3 {
 
   font-size: rem(36px);
   line-height: 1;
@@ -179,36 +186,29 @@ align-items: center;
   display: flex;
   margin-right: 10px;
 }
-.arrow-left--resp {
-  display: none;
-  @include tablets {
-    display: flex;
-  }
-}
-.arrow-right--resp {
-  display: none;
 
-  @include tablets {
-    display: flex;
-  }
-}
-.arrow-left {
-  display: flex;
-  @include tablets {
-    display: none;
-  }
-}
-.arrow-right {
-  display: flex;
-
-  @include tablets {
-    display: none;
-  }
-}
 .noscroll {
   overflow: hidden;
 }
 
 .slider-bar {
   display: none;
+}
+
+.arrows {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  @include tablets {
+    top: 30%;
+  }
+}
+.arrow-left{
+  left: -5%;
+}
+.arrow-right{
+  right: -5%;
 }
