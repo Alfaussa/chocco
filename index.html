@@ -14,19 +14,19 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-        <section class="hero">
+        <section data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./icons/logo.png" alt="chocco logo" class="logo">
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"> <a href="#" class="menu__link">О нас</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Батончики</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Команда</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Меню</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="features" class="menu__link">О нас</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="menu" class="menu__link">Батончики</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="products" class="menu__link">Меню</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="reviews"class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="map"class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
 
@@ -49,7 +49,7 @@
                             <h1 class="hero__main-title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
                             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим
                                 здоровьем</div>
-                            <button type="button" class="button button--theme--white">Заказать</button>
+                            <a href="#" data-scroll-to="order" class="button button--theme--white">Заказать</a>
                         </div>
                         <div class="hero__image"><img src="./decor/bars-hero.png" class="hero__image-element"
                                 alt="chocco">
@@ -105,7 +105,7 @@
         </section>
         </section>
         <!------------------------Features section-->
-        <section class="section features-section">
+        <section data-section-id="features" class="section features-section">
             <div class="container">
                 <div class="headline">
                     <h2 class="section__title headline__title ">Почему CHOCCO</h2>
@@ -165,7 +165,7 @@
             </div>
         </section>
         <!------------------------Slider-menu section-->
-        <section class="section menu-section">
+        <section data-section-id="menu" class="section menu-section">
             <div class="container container-menu">
                 <div class="arrows arrow-left">
                     <svg class="arrow">
@@ -362,7 +362,7 @@
             </div>
         </section>
         <!------------------------Team section-->
-        <section class="section team-section">
+        <section data-section-id="team" lass="section team-section">
             <div class="container">
                 <div class="section__title">Команда</div>
                 <ul class="team team--version--desktop">
@@ -483,7 +483,7 @@
             </div>
         </section>
         <!------------------------Menu section-->
-        <section class="section products-menu-section">
+        <section data-section-id="products" class="section products-menu-section">
             <h1 class="section__title products-menu-section__title">Меню</h1>
             <ul class="products-menu">
                 <li class="products-menu__item">
@@ -537,7 +537,7 @@
 
         </section>
         <!------------------------Review section-->
-        <section class="section reviews-section">
+        <section data-section-id="reviews" class="section reviews-section">
             <div class="container">
                 <h2 class="section__title section__title--centered ">Отзывы</h2>
                 <div class="reviews">
@@ -623,7 +623,7 @@
             </div>
         </section>
         <!------------------------Form section-->
-        <section class=" section order-section section--font-color--green">
+        <section data-section-id="order" class=" section order-section section--font-color--green">
             <div class="container">
                 <h2 class="section__title section__title--green section__title--centered">Закажите доставку</h2>
                 <form class="form">
@@ -716,7 +716,7 @@
             </div>
         </section>
         <!------------------------Map section-->
-        <section class="map section">
+        <section data-section-id="map" class="map section">
             <div class="map-image"><img src="./decor/map-bg.png" alt="map" class="map-img"></div>
             <footer class="footer">
                 <div class="container footer__container">
@@ -753,14 +753,14 @@
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="features" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="menu" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="products" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link"></a></li>
+            <li class="fixed-menu__item"><a href="" data-scroll-to="map" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
  <!------------------------Scripts-->
