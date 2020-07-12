@@ -2146,55 +2146,155 @@ width: 100%;
   filter: opacity(0.7);
 }
 
-.player {
+video__player {
   position: relative;
-  display: block;
+  width: 70.22%;
+  background: #3e3e3e;
+}
+
+.video__poster {
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.player.active.player__splash {
+
+.video__play {
+  width: 13.6666666667rem;
+  height: 19.6666666667rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  fill: #fff;
+}
+@media screen and (max-width: 480px) {
+  .video__play {
+    width: 8.3333333333rem;
+    heigth: 8.3333333333rem;
+  }
+}
+
+.video__play--active {
   display: none;
 }
-.player.paused .player__start {
-  width: 14px;
-  height: 22px;
-  border: none;
-}
-.player.paused .player__start::after, .player.paused .player__start::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 5px;
-  top: 0;
-  bottom: 0;
-  background: #626262;
-}
-.player.paused .player__start::after {
-  right: 0;
-}
-.player.paused .player__start::before {
-  left: 0;
-}
 
-.player__splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../../products/Granola-player.png") center center/cover no-repeat;
-  cursor: pointer;
-}
-
-.player__controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35px;
-  background: #3e3e3e;
+.video__toolbar {
+  width: 70.22%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  background: #3e3e3e;
+}
+
+.video__duration, .video__volume-block {
+  display: flex;
+  align-items: center;
+}
+
+.video__duration {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.video__toolbar-play {
+  width: 24px;
+  height: 33px;
+  margin: 0 10px;
+  cursor: pointer;
+  fill: brown;
+}
+
+.video__toolbar-pause {
+  width: 24px;
+  height: 33px;
+  margin: 0 10px;
+  display: none;
+  cursor: pointer;
+  fill: brown;
+}
+
+.video__toolbar-play--active {
+  display: none;
+}
+
+.video__toolbar-pause--active {
+  display: block;
+}
+
+.video__timer {
+  font-size: 1em;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.video__length {
+  width: 100%;
+  height: 5px;
+  border-radius: 1px;
+  background-color: brown;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+}
+.video__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: brown;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.video__volume-block {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.video__volume {
+  width: 24px;
+  height: 33px;
+  margin: 0 10px;
+  fill: brown;
+}
+
+.video__volume-muted {
+  width: 24px;
+  height: 33px;
+  margin: 0 10px;
+  display: none;
+  fill: brown;
+}
+
+.video__volume--active {
+  display: none;
+}
+
+.video__volume-muted--active {
+  display: block;
+}
+
+.video__volume-level {
+  width: 58px;
+  height: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 1px;
+  background-color: brown;
+  outline: none;
+}
+.video__volume-level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: brown;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
 }

@@ -5,8 +5,6 @@ const menuItems = sideMenu.find("fixed-menu__item");
 
 let inScroll = false;
 
-sections.first().addClass("active");
-
 const countSectionPosition = sectionEq => {
   return sectionEq * -100;
 }
