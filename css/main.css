@@ -1631,6 +1631,11 @@ width: 100%;
   margin-left: 5px;
 }
 
+.play-icon {
+  width: 3.3333333333rem;
+  height: 3.3333333333rem;
+}
+
 .opened__menu {
   display: none;
   position: absolute;
@@ -2146,155 +2151,251 @@ width: 100%;
   filter: opacity(0.7);
 }
 
-video__player {
+.video {
+  background-color: #f8faf9;
   position: relative;
-  width: 70.22%;
-  background: #3e3e3e;
 }
 
-.video__poster {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video__play {
-  width: 13.6666666667rem;
-  height: 19.6666666667rem;
+.video__berries {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  fill: #fff;
+  top: -2.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .video__berries {
+    transform: scale(0.6);
+    left: -3.8888888889rem;
+    top: -7.2222222222rem;
+  }
 }
 @media screen and (max-width: 480px) {
-  .video__play {
-    width: 8.3333333333rem;
-    heigth: 8.3333333333rem;
+  .video__berries {
+    left: -3.8888888889rem;
+    top: -7.2222222222rem;
+    transform: scale(0.4);
   }
 }
 
-.video__play--active {
-  display: none;
+.video__leaf {
+  position: absolute;
+  top: -2.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .video__leaf {
+    transform: scale(0.6);
+    left: -3.3333333333rem;
+    top: -13.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video__leaf {
+    left: -3.3333333333rem;
+    top: -13.3333333333rem;
+    transform: scale(0.4);
+  }
 }
 
-.video__toolbar {
-  width: 70.22%;
+.container--video {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background: #3e3e3e;
+  justify-content: center;
 }
 
-.video__duration, .video__volume-block {
+.video__title {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .video__title {
+    font-size: 30px;
+  }
+}
+
+.player {
+  margin-top: 50px;
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 90%;
+  }
+}
+
+.player__splash {
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-image: url(../../products/Granola-player.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 30;
 }
 
-.video__duration {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.video__toolbar-play {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  cursor: pointer;
-  fill: brown;
-}
-
-.video__toolbar-pause {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  display: none;
-  cursor: pointer;
-  fill: brown;
-}
-
-.video__toolbar-play--active {
-  display: none;
-}
-
-.video__toolbar-pause--active {
+.player__splash-play {
   display: block;
 }
 
-.video__timer {
-  font-size: 1em;
-  color: #fff;
-  margin-right: 10px;
-}
-
-.video__length {
+.player__wrapper {
+  position: relative;
+  background-color: #3e3e3e;
   width: 100%;
-  height: 5px;
-  border-radius: 1px;
-  background-color: brown;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  outline: none;
+  height: 370px;
 }
-.video__length::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: brown;
-  cursor: pointer;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
+@media screen and (max-width: 480px) {
+  .player__wrapper {
+    height: 200px;
+  }
 }
 
-.video__volume-block {
+.player__controls {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  position: relative;
+  background-color: #3e3e3e;
+  padding: 4px 20px 8px;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    padding: 2px 4px;
+  }
 }
 
-.video__volume {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  fill: brown;
+.player__duration {
+  width: 70%;
+  height: 100%;
+  display: flex;
 }
 
-.video__volume-muted {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  display: none;
-  fill: brown;
-}
-
-.video__volume--active {
-  display: none;
-}
-
-.video__volume-muted--active {
-  display: block;
-}
-
-.video__volume-level {
-  width: 58px;
+.player__line {
+  position: relative;
   height: 4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  border-radius: 1px;
-  background-color: brown;
-  outline: none;
+  padding: 0;
+  width: 100%;
+  margin-left: 0.5555555556rem;
+  background: #626262;
+  z-index: 20;
 }
-.video__volume-level::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: brown;
-  cursor: pointer;
+@media screen and (max-width: 480px) {
+  .player__line {
+    width: 90%;
+  }
+}
+
+.player__volume {
+  margin-left: 5%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .player__volume {
+    margin-left: 1%;
+  }
+}
+
+.player__line-button {
+  position: absolute;
+  border: none;
+  outline: none;
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  left: 0;
+  top: -4px;
+  background: #626262;
+}
+@media screen and (max-width: 480px) {
+  .player__line-button {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.player__volume-button {
+  left: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  .player__volume-line {
+    width: 80%;
+  }
+}
+
+.player__volume-pic {
+  height: 22px;
+  width: 20px;
+  background-image: url(../img/video/volume.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 480px) {
+  .player__volume-pic {
+    height: 16px;
+    width: 14px;
+  }
+}
+
+.player__main-btn {
+  width: 16px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.player__start {
+  background-image: url(../../icons/play.png);
+}
+
+.paused {
+  background: #3e3e3e;
+  position: relative;
+}
+.paused::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #626262;
+}
+@media screen and (max-width: 480px) {
+  .paused::after {
+    width: 3px;
+    height: 70%;
+    top: 20%;
+    left: 20%;
+  }
+}
+.paused::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: #626262;
+}
+@media screen and (max-width: 480px) {
+  .paused::before {
+    right: 20%;
+    top: 20%;
+    height: 70%;
+    width: 3px;
+  }
+}
+
+.player__wrapper--active > .player__splash {
+  display: none;
+}
+
+#yt-player {
+  width: 100%;
+  height: 100%;
+}
+
+.html5-video-player {
+  object-fit: contain;
 }

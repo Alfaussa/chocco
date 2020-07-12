@@ -1,148 +1,223 @@
-video__player {
+.video {
+  background-color: #f8faf9;
   position: relative;
-  width: 70.22%;
-  background: #3e3e3e;
 }
 
-.video__poster {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video__play {
-  width: rem(246px);
-  height: rem(354px);
+.video__berries {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  fill: #fff;
+  top: rem(-50px);
+  @include tablets {
+    transform: scale(0.6);
+    left: rem(-70px);
+    top: rem(-130px);
+  }
   @include phones {
-    width: rem(150px);
-    heigth: rem(150px);
+    left: rem(-70px);
+    top: rem(-130px);
+    transform: scale(0.4);
+  }
+}
+.video__leaf {
+  position: absolute;
+  top: rem(-50px);
+  @include tablets {
+    transform: scale(0.6);
+    left: rem(-60px);
+    top: rem(-240px);
+  }
+  @include phones {
+    left: rem(-60px);
+    top: rem(-240px);
+    transform: scale(0.4);
   }
 }
 
-.video__play--active {
-  display: none;
-}
-
-.video__toolbar {
-  width: 70.22%;
+.container--video {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background: #3e3e3e;
+  justify-content: center;
 }
 
-.video__duration, .video__volume-block {
+.video__title {
+  text-align: center;
+  @include phones {
+    font-size: 30px;
+  }
+}
+
+.player {
+  margin-top: 50px;
+  width: 70%;
+  @include tablets {
+    width: 90%;
+  }
+}
+
+.player__splash {
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-image: url(../../products/Granola-player.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 30;
 }
 
-.video__duration {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.video__toolbar-play {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  cursor: pointer;
-  fill: brown;
-}
-
-.video__toolbar-pause {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  display: none;
-  cursor: pointer;
-  fill: brown;
-}
-
-.video__toolbar-play--active {
-  display: none;
-}
-
-.video__toolbar-pause--active {
+.player__splash-play {
   display: block;
 }
 
-.video__timer {
-  font-size: 1em;
-  color: #fff;
-  margin-right: 10px;
+.player__wrapper {
+  position: relative;
+  background-color: #3e3e3e;
+  width: 100%;
+  height: 370px;
+
+  @include phones {
+    height: 200px;
+  }
+}
+.player__controls {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #3e3e3e;
+  padding: 4px 20px 8px;
+  @include phones {
+    padding: 2px 4px;
+  }
 }
 
-.video__length {
+.player__duration {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+.player__line {
+  position: relative;
+  height: 4px;
+  padding: 0;
   width: 100%;
-  height: 5px;
-  border-radius: 1px;
-  background-color: brown;
-  -webkit-appearance: none;
-  appearance: none;   
+  margin-left: rem(10px);
+  background: #626262;
+  z-index: 20;
+  @include phones {
+    width: 90%;
+  }
+}
+
+.player__volume {
+  margin-left: 5%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    margin-left: 1%;
+  }
+}
+
+.player__line-button {
+  position: absolute;
+  border: none;
   outline: none;
-  &::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: brown;    
-  cursor: pointer;
   width: 13px;
   height: 13px;
-  border-radius: 50%;    
+  border-radius: 50%;
+  left: 0;
+  top: -4px;
+  background: #626262;
+  @include phones {
+    width: 12px;
+    height: 12px;
   }
 }
 
-.video__volume-block {
-  display: flex;
-  align-items: center;
-  margin-right: 15px;
+.player__volume-button {
+  left: 20%;
 }
 
-.video__volume {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  fill: brown;
-}
-
-.video__volume-muted {
-  width: 24px;
-  height: 33px;
-  margin: 0 10px;
-  display: none;
-  fill: brown;
-}
-
-.video__volume--active {
-  display: none;
-}
-
-.video__volume-muted--active {
-  display: block;
-}
-
-.video__volume-level {
-  width: 58px;
-  height: 4px;
-  -webkit-appearance: none;
-  appearance: none;   
-  border-radius: 1px;
-  background-color: brown;
-  outline: none;
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    background: brown;    
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;    
+.player__volume-line {
+  @include phones {
+    width: 80%;
   }
+}
+.player__volume-pic {
+  height: 22px;
+  width: 20px;
+  background-image: url(../img/video/volume.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include phones {
+    height: 16px;
+    width: 14px;
+  }
+}
+
+.player__main-btn {
+  width: 16px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.player__start {
+  background-image: url(../../icons/play.png);
+}
+
+.paused {
+  background: #3e3e3e;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #626262;
+
+    @include phones {
+      width: 3px;
+      height: 70%;
+      top: 20%;
+      left: 20%;
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: #626262;
+    @include phones {
+      right: 20%;
+      top: 20%;
+      height: 70%;
+      width: 3px;
+    }
+  }
+}
+
+.player__wrapper--active > .player__splash {
+  display: none;
+}
+
+#yt-player {
+  width: 100%;
+  height: 100%;
+}
+
+.html5-video-player {
+  object-fit: contain;
+}
+
+.ytp-iv-video-content {
 }
