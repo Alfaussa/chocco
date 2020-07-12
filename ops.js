@@ -45,9 +45,9 @@ const performTransition = (sectionEq) => {
       transform: `translateY(${position}%)`,
     });
 
-    resetActiveClassForItem(sections, sectionEq, "active");
+   resetActiveClassForItem(sections, sectionEq, "active");
 
-   sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+   /*sections.eq(sectionEq).addClass("active").siblings().removeClass("active");*/
 
    sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
 
