@@ -79,6 +79,8 @@
     margin-left: 0;
     min-width: 100%;
   }
+
+  
 }
 .reviews__title{
   font-size: rem(30px);
@@ -118,6 +120,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: rem(40px);
+ 
 }
 .reviews__display {
 display: flex;
@@ -188,6 +191,13 @@ justify-content: center;
 .reviews-section {
   @include tablets {
     min-height: 100vh;
+  }
+  &::before {
+    position: absolute;
+    content: url("../decor/berrySet.png");
+    right: 0;
+    top: 6.5%;
+    z-index: 10;
   }
 }
   

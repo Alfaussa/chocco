@@ -19,13 +19,13 @@
   &::before {
     position: absolute;
     content: url("../decor/falling-1-leaf.png");
-    bottom: rem(-70px);
+    bottom: rem(-80px);
     left: 2%;
   }
   &::after {
     position: absolute;
     content: url("../decor/CompositeLayer@1X.png");
-    bottom: rem(-40px);
+    bottom: rem(-60px);
     right: 0;
   }
 

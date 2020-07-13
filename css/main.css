@@ -494,13 +494,13 @@ body, html {
 .hero::before {
   position: absolute;
   content: url("../decor/falling-1-leaf.png");
-  bottom: -3.8888888889rem;
+  bottom: -4.4444444444rem;
   left: 2%;
 }
 .hero::after {
   position: absolute;
   content: url("../decor/CompositeLayer@1X.png");
-  bottom: -2.2222222222rem;
+  bottom: -3.3333333333rem;
   right: 0;
 }
 
@@ -1153,6 +1153,13 @@ body, html {
     min-height: 100vh;
   }
 }
+.reviews-section::before {
+  position: absolute;
+  content: url("../decor/berrySet.png");
+  right: 0;
+  top: 6.5%;
+  z-index: 10;
+}
 
 .interactive-avatar {
   width: 4.4444444444rem;
@@ -1196,6 +1203,7 @@ body, html {
 .form__cont {
   display: flex;
   margin-bottom: 2.7777777778rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .form__cont {
@@ -1210,6 +1218,12 @@ body, html {
     flex-direction: column;
   }
 }
+.form__cont::after {
+  position: absolute;
+  content: url("../../decor/bigleave.png");
+  right: 0;
+  bottom: 10%;
+}
 
 .form__col {
   flex: 1;
@@ -1222,6 +1236,12 @@ body, html {
   .form__col {
     margin-right: 0;
   }
+}
+.form__col::before {
+  position: absolute;
+  content: url("../../decor/1berry.png");
+  left: -5%;
+  bottom: -5%;
 }
 
 .form__row {
@@ -1316,6 +1336,16 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.container-form {
+  position: relative;
+}
+.container-form::before {
+  position: absolute;
+  content: url("../../decor/buket.png");
+  right: -8%;
+  top: 0;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1371,6 +1401,7 @@ input[type=number] {
   background: url("../decor/bg-berries-trnspt.png") center no-repeat;
   background-color: #d2ddd9;
   color: #0b4d30;
+  position: relative;
 }
 
 .features-section {
@@ -1438,8 +1469,30 @@ input[type=number] {
   transform: translate(-50%, -50%);
 }
 
-.fixed-menu--shadowed {
-  color: black;
+.fixed-menu--shadowed .fixed-menu__item {
+  margin-bottom: 0.2777777778rem;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #626262;
+}
+.fixed-menu--shadowed .fixed-menu__link {
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
+  border-radius: 50%;
+  border: 0.0555555556rem solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu--shadowed .fixed-menu__link::before {
+  content: "";
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
+  border-radius: 50%;
+  background: #626262;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hamburger {
@@ -1632,8 +1685,9 @@ width: 100%;
 }
 
 .play-icon {
-  width: 3.3333333333rem;
-  height: 3.3333333333rem;
+  width: 3.8888888889rem;
+  height: 3.8888888889rem;
+  fill: white;
 }
 
 .opened__menu {
@@ -1680,6 +1734,7 @@ width: 100%;
   background-color: #f8fafa;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .menu-section {
@@ -1690,13 +1745,13 @@ width: 100%;
   position: absolute;
   content: url("../decor/menubarsleafbg.png");
   right: 0;
-  top: 33%;
+  top: 63%;
 }
 .menu-section:after {
   position: absolute;
   content: url("../decor/menu-bar-berry.png");
   right: 0;
-  top: 36%;
+  bottom: -10%;
 }
 
 .bx-wrapper {
@@ -1943,6 +1998,7 @@ width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .team {
@@ -1955,6 +2011,13 @@ width: 100%;
     flex-direction: column;
     align-items: center;
   }
+}
+.team:before {
+  position: absolute;
+  content: url("../decor/berryOne.png");
+  left: 0;
+  bottom: -30%;
+  z-index: 10;
 }
 
 .team--version--desktop .team__content {
@@ -2156,49 +2219,23 @@ width: 100%;
   position: relative;
 }
 
-.video__berries {
-  position: absolute;
-  top: -2.7777777778rem;
-}
-@media screen and (max-width: 768px) {
-  .video__berries {
-    transform: scale(0.6);
-    left: -3.8888888889rem;
-    top: -7.2222222222rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .video__berries {
-    left: -3.8888888889rem;
-    top: -7.2222222222rem;
-    transform: scale(0.4);
-  }
-}
-
-.video__leaf {
-  position: absolute;
-  top: -2.7777777778rem;
-}
-@media screen and (max-width: 768px) {
-  .video__leaf {
-    transform: scale(0.6);
-    left: -3.3333333333rem;
-    top: -13.3333333333rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .video__leaf {
-    left: -3.3333333333rem;
-    top: -13.3333333333rem;
-    transform: scale(0.4);
-  }
-}
-
 .container--video {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.container--video::before {
+  position: absolute;
+  content: url("../../decor/leaf-pattern2.png");
+  left: 0;
+  top: -30%;
+}
+.container--video::after {
+  position: absolute;
+  content: url("../../decor/berries5.png");
+  left: 0;
+  top: -25%;
 }
 
 .video__title {
@@ -2218,6 +2255,18 @@ width: 100%;
   .player {
     width: 90%;
   }
+}
+.player::before {
+  position: absolute;
+  content: url("../../decor/falling-1-leaf.png");
+  left: 0;
+  bottom: 0;
+}
+.player::after {
+  position: absolute;
+  content: url("../../decor/leaf-player-up.png");
+  right: 0;
+  top: 10%;
 }
 
 .player__splash {
@@ -2328,7 +2377,7 @@ width: 100%;
 .player__volume-pic {
   height: 22px;
   width: 20px;
-  background-image: url(../img/video/volume.png);
+  background-image: url(../../decor/Volume.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2346,7 +2395,7 @@ width: 100%;
 }
 
 .player__start {
-  background-image: url(../../icons/play.png);
+  background-image: url(../../decor/Play-gray.png);
 }
 
 .paused {

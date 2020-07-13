@@ -1,6 +1,7 @@
 .form__cont {
   display: flex;
   margin-bottom: rem(50px);
+  position: relative;
   
 
   @include tablets {
@@ -13,6 +14,13 @@
     padding: 0;
     flex-direction: column;
   }
+ 
+  &::after {
+    position: absolute;
+    content: url("../../decor/bigleave.png");
+    right: 0;
+    bottom: 10%;
+  }
 }
 .form__col {
   flex: 1;
@@ -24,6 +32,12 @@
 
   @include tablets {
     margin-right: 0;
+  }
+  &::before {
+    position: absolute;
+    content: url("../../decor/1berry.png");
+    left: -5%;
+    bottom: -5%;
   }
 }
 .form__row {
@@ -105,4 +119,13 @@ input::-webkit-inner-spin-button {
 }
 input[type='number'] {
     -moz-appearance: textfield;
+}
+.container-form {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("../../decor/buket.png");
+    right: -8%;
+    top: 0;
+  }
 }

@@ -40,5 +40,37 @@
   }
 }
 .fixed-menu--shadowed{
-  color:black;
+  .fixed-menu__item {
+    margin-bottom: rem(5px);
+  
+    &--active {
+      .fixed-menu__link {
+        border-color: #626262;
+      }
+  
+    }
+  }
+
+  .fixed-menu__link {
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: rem(1px) solid transparent;
+    display:block;
+    position: relative;
+  
+    &::before {
+      content: "";
+      width: rem(6px);
+      height: rem(6px);
+      border-radius: 50%;
+      background: #626262;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
 }
+

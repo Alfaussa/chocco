@@ -4,11 +4,12 @@ function init() {
   // Создание карты.
   let myMap = new ymaps.Map("map", {
     center: [55.754404, 37.607665],
-    zoom: 11
+    zoom: 11,
+    controls:[]
   });
   myMap.behaviors.disable("scrollZoom");
   myPlacemark1 = new ymaps.Placemark(
-    [55.754693, 37.640796],
+    [55.784693, 37.640796],
     {
       hintContent: "Точка продажи №1"
     },

@@ -2,6 +2,7 @@
   background-color: #f8fafa;
   flex-direction: row;
   align-items: center;
+  position: relative;
   @include tablets {
     flex-direction: column;
    
@@ -10,14 +11,14 @@
     position: absolute;
     content: url("../decor/menubarsleafbg.png");
     right: 0;
-    top: 33%;
+    top: 63%;
   }
 
   &:after  {
     position: absolute;
     content: url("../decor/menu-bar-berry.png");
     right: 0;
-    top: 36%;
+    bottom: -10%;
     }
 }
 .bx-wrapper {
