@@ -3,40 +3,40 @@ let myPlacemark;
 function init() {
   // Создание карты.
   let myMap = new ymaps.Map("map", {
-    center: [55.16082, 61.401933],
+    center: [55.754404, 37.607665],
     zoom: 11
   });
   myMap.behaviors.disable("scrollZoom");
   myPlacemark1 = new ymaps.Placemark(
-    [55.155455, 61.413132],
+    [55.754693, 37.640796],
     {
       hintContent: "Точка продажи №1"
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "",
+      iconImageHref: "./decor/mark.png",
       iconImageSize: [46, 57]
     }
   );
   myPlacemark2 = new ymaps.Placemark(
-    [55.160746, 61.448295],
+    [55.747641, 37.604576],
     {
       hintContent: "Точка продажи №2"
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "",
+      iconImageHref: "./decor/mark.png",
       iconImageSize: [46, 57]
     }
   );
   myPlacemark3 = new ymaps.Placemark(
-    [55.24896, 61.393678],
+    [55.762324, 37.634273],
     {
       hintContent: "Точка продажи №3"
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "",
+      iconImageHref: "./decor/mark.png",
       iconImageSize: [46, 57]
     }
   );
