@@ -6,7 +6,7 @@
   margin-bottom: rem(50px);
   display: flex;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 45vh;
 
   @include tablets {
   flex-direction: column;
@@ -88,12 +88,19 @@
   margin-bottom: rem(10px);
   color: #000000;
   padding-top: rem(20px);
+  text-align: left;
+
+  @include phones {
+    text-align: center;
+  }
+
 }
 .review__text {
   margin-bottom: rem(36px);
   font-size: 14px;
-  width: 90%;
+  width: 85%;
   text-align: left;
+  z-index: 100;
 
   @include tablets {
     font-size: 12px;
@@ -189,6 +196,7 @@ justify-content: center;
   object-fit: cover;
 }
 .reviews-section {
+  position: relative;
   @include tablets {
     min-height: 100vh;
   }
@@ -196,7 +204,7 @@ justify-content: center;
     position: absolute;
     content: url("../decor/berrySet.png");
     right: 0;
-    top: 6.5%;
+    top: 0;
     z-index: 10;
   }
 }

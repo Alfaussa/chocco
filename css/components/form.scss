@@ -1,3 +1,24 @@
+.order-section {
+
+  &::after {
+    position: absolute;
+    content: url("../../decor/bigleave.png");
+    right: 0;
+    bottom: 10%;
+
+    @include tablets {
+    display: none;
+    }
+
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../decor/buket.png");
+    right: 0;
+    top: 0;
+  }
+}
 .form__cont {
   display: flex;
   margin-bottom: rem(50px);
@@ -15,12 +36,7 @@
     flex-direction: column;
   }
  
-  &::after {
-    position: absolute;
-    content: url("../../decor/bigleave.png");
-    right: 0;
-    bottom: 10%;
-  }
+  
 }
 .form__col {
   flex: 1;
@@ -35,9 +51,13 @@
   }
   &::before {
     position: absolute;
-    content: url("../../decor/1berry.png");
-    left: -5%;
-    bottom: -5%;
+    content: url("../decor/1berry.png");
+    left: -7%;
+    bottom: -45%;
+
+    @include tablets {
+      display: none;
+    }
   }
 }
 .form__row {
@@ -122,10 +142,5 @@ input[type='number'] {
 }
 .container-form {
   position: relative;
-  &::before {
-    position: absolute;
-    content: url("../../decor/buket.png");
-    right: -8%;
-    top: 0;
-  }
+ 
 }
