@@ -15,6 +15,7 @@ background: url("../decor/bg-leaf1.png") left top 57% no-repeat;
   position: absolute;
   bottom: rem(-100px);
   left: 0;
+  z-index: 10000;
   }
   &::before{
     @include phones {

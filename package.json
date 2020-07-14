@@ -1,0 +1,23 @@
+{
+  "name": "Chocco-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfaussa/chocco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alfaussa/chocco/issues"
+  },
+  "homepage": "https://github.com/Alfaussa/chocco#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

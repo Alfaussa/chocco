@@ -1224,8 +1224,8 @@ body, html {
 .order-section::before {
   position: absolute;
   content: url("../decor/buket.png");
-  right: 0;
-  top: 0;
+  right: -4%;
+  top: -10%;
 }
 
 .form__cont {
@@ -1444,6 +1444,7 @@ input[type=number] {
   position: absolute;
   bottom: -5.5555555556rem;
   left: 0;
+  z-index: 10000;
 }
 @media screen and (max-width: 480px) {
   .features-section::before {
@@ -2021,6 +2022,13 @@ width: 100%;
   align-items: center;
   position: relative;
 }
+.team-section:before {
+  position: absolute;
+  content: url("../decor/berryOne.png");
+  left: 5%;
+  bottom: -3%;
+  z-index: 1000;
+}
 
 .team {
   display: flex;
@@ -2031,23 +2039,6 @@ width: 100%;
     padding: 0 10%;
     flex-direction: column;
     align-items: center;
-  }
-}
-.team:before {
-  position: absolute;
-  content: url("../decor/berryOne.png");
-  left: 0;
-  bottom: -40%;
-  z-index: 10;
-}
-@media screen and (max-width: 768px) {
-  .team:before {
-    bottom: -110%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .team:before {
-    bottom: -150%;
   }
 }
 
@@ -2265,13 +2256,13 @@ width: 100%;
   position: absolute;
   content: url("../decor/leaf-pattern2.png");
   left: 0;
-  top: -30%;
+  top: -10%;
 }
 .video::after {
   position: absolute;
   content: url("../decor/berries5.png");
   left: 0;
-  top: -25%;
+  top: -10%;
 }
 
 .container--video {
