@@ -725,7 +725,7 @@ body, html {
   cursor: pointer; }
 
 .hero {
-  background: url("../../images/bg-leaf-hero.png") right bottom no-repeat;
+  background: url("../images/bg-leaf-hero.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 36.11111rem;
@@ -739,12 +739,12 @@ body, html {
       display: none; } }
   .hero::before {
     position: absolute;
-    content: url("../../images/falling-1-leaf.png");
+    content: url("../images/falling-1-leaf.png");
     bottom: -4.44444rem;
     left: 2%; }
   .hero::after {
     position: absolute;
-    content: url("../../images/CompositeLayer@1X.png");
+    content: url("../images/CompositeLayer@1X.png");
     bottom: -3.33333rem;
     right: 0; }
 
