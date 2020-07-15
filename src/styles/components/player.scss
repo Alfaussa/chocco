@@ -4,14 +4,14 @@
 
   &::before {
     position: absolute;
-    content: url("../decor/leaf-pattern2.png");
+    content: url("../../images/leaf-pattern2.png");
     left: 0;
     top: -10%;
   }
 
   &::after {
     position: absolute;
-    content: url("../decor/berries5.png");
+    content: url("../../images/berries5.png");
     left: 0;
     top: -10%;
   }
@@ -41,13 +41,13 @@
   }
   &::before {
     position: absolute;
-    content: url("../decor/falling-1-leaf.png");
+    content: url("../../images/falling-1-leaf.png");
     left: 0;
     bottom: -10%;
   }
   &::after {
     position: absolute;
-    content: url("../decor/leaf-player-up.png");
+    content: url("../../images/leaf-player-up.png");
     right: 0;
     top: 10%;
   }
@@ -58,7 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../products/Granola-player.png);
+  background-image: url("../../images/Granola-player.png");
   background-size: cover;
   background-repeat: no-repeat;
   left: 0;
@@ -151,7 +151,7 @@
 .player__volume-pic {
   height: 22px;
   width: 20px;
-  background-image: url(../decor/Volume.png);
+  background-image: url("../../images/Volume.png");
   background-size: cover;
   background-repeat: no-repeat;
   @include phones {
@@ -167,7 +167,7 @@
 }
 
 .player__start {
-  background-image: url(../decor/Play-gray.png);
+  background-image: url("../../images/Play-gray.png");
 }
 
 .paused {

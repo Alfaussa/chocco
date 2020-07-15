@@ -2,7 +2,7 @@
 
   &::after {
     position: absolute;
-    content: url("../../decor/bigleave.png");
+    content: url("../../images/bigleave.png");
     right: 0;
     bottom: 10%;
 
@@ -14,7 +14,7 @@
 
   &::before {
     position: absolute;
-    content: url("../decor/buket.png");
+    content: url("../../images/buket.png");
     right:-4%;
     top: -10%;
   }
@@ -51,7 +51,7 @@
   }
   &::before {
     position: absolute;
-    content: url("../decor/1berry.png");
+    content: url("../../images/1berry.png");
     left: -7%;
     bottom: -45%;
 

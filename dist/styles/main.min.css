@@ -725,7 +725,7 @@ body, html {
   cursor: pointer; }
 
 .hero {
-  background: url("../decor/bg-leaf-hero.png") right bottom no-repeat;
+  background: url("../../images/bg-leaf-hero.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 36.11111rem;
@@ -739,12 +739,12 @@ body, html {
       display: none; } }
   .hero::before {
     position: absolute;
-    content: url("../decor/falling-1-leaf.png");
+    content: url("../../images/falling-1-leaf.png");
     bottom: -4.44444rem;
     left: 2%; }
   .hero::after {
     position: absolute;
-    content: url("../decor/CompositeLayer@1X.png");
+    content: url("../../images/CompositeLayer@1X.png");
     bottom: -3.33333rem;
     right: 0; }
 
@@ -763,7 +763,7 @@ body, html {
       align-items: center;
       text-align: center; }
       .hero__title-section::before {
-        content: url("../decor/hero-set-tablets.png"); } }
+        content: url("../../images/hero-set-tablets.png"); } }
   @media screen and (max-width: 480px) {
     .hero__title-section {
       width: 100%;
@@ -774,7 +774,7 @@ body, html {
       align-items: center;
       text-align: center; }
       .hero__title-section::before {
-        content: url("../decor/barph.png"); } }
+        content: url("../../images/barph.png"); } }
 
 @media screen and (max-width: 768px) {
   .hero__icons-section {
@@ -1011,7 +1011,7 @@ body, html {
       padding: 0;
       display: inline-flex; } }
   .features__item::before {
-    content: url("../decor/divider.png");
+    content: url("../../images/divider.png");
     position: absolute;
     top: 2.66667rem;
     right: 0;
@@ -1106,13 +1106,13 @@ body, html {
     transform: translateX(-50%);
     top: -3.61111rem; }
   .reviews__display::after {
-    content: url("../../decor/grey-pattern-berries.png");
+    content: url("../../images/grey-pattern-berries.png");
     position: absolute;
     top: 0rem;
     right: 0; }
     @media screen and (max-width: 480px) {
       .reviews__display::after {
-        content: url("../decor/berry-pat-phone.png");
+        content: url("../../images/berry-pat-phone.png");
         width: 35%; } }
 
 .reviews__avatar {
@@ -1256,7 +1256,7 @@ body, html {
       min-height: 100vh; } }
   .reviews-section::before {
     position: absolute;
-    content: url("../decor/berrySet.png");
+    content: url("../../images/berrySet.png");
     right: 0;
     top: 0;
     z-index: 10; }
@@ -1295,7 +1295,7 @@ body, html {
 
 .order-section::after {
   position: absolute;
-  content: url("../../decor/bigleave.png");
+  content: url("../../images/bigleave.png");
   right: 0;
   bottom: 10%; }
   @media screen and (max-width: 768px) {
@@ -1304,7 +1304,7 @@ body, html {
 
 .order-section::before {
   position: absolute;
-  content: url("../decor/buket.png");
+  content: url("../../images/buket.png");
   right: -4%;
   top: -10%; }
 
@@ -1332,7 +1332,7 @@ body, html {
       margin-right: 0; } }
   .form__col::before {
     position: absolute;
-    content: url("../decor/1berry.png");
+    content: url("../../images/1berry.png");
     left: -7%;
     bottom: -45%; }
     @media screen and (max-width: 768px) {
@@ -1416,7 +1416,7 @@ input[type='number'] {
   .radio--checkbox .radio__visible {
     border-radius: 0; }
     .radio--checkbox .radio__visible::before {
-      background: url("../decor/green-checkmark.png") center center no-repeat; }
+      background: url("../../images/green-checkmark.png") center center no-repeat; }
   .radio:last-child {
     margin-right: 2.3rem; }
 
@@ -1449,22 +1449,22 @@ input[type='number'] {
     transform: translate(-50%, -50%); }
 
 .order-section {
-  background: url("../decor/bg-berries-trnspt.png") center no-repeat;
+  background: url("../../images/bg-berries-trnspt.png") center no-repeat;
   background-color: #d2ddd9;
   color: #0b4d30;
   position: relative; }
 
 .features-section {
   position: relative;
-  background: url("../decor/bg-leaf1.png") left top 57% no-repeat; }
+  background: url("../../images/bg-leaf1.png") left top 57% no-repeat; }
   @media screen and (max-width: 480px) {
     .features-section {
       background: none; } }
   @media screen and (max-width: 768px) {
     .features-section {
-      background: url("../decor/bg-leaf1.png") left top 10% no-repeat; } }
+      background: url("../../images/bg-leaf1.png") left top 10% no-repeat; } }
   .features-section::before {
-    content: url("../decor/berry-bar.png");
+    content: url("../../images/berry-bar.png");
     position: absolute;
     bottom: -5.55556rem;
     left: 0;
@@ -1548,33 +1548,6 @@ input[type='number'] {
   border-radius: 10px;
   margin-bottom: 4px; }
 
-/*.map-image{
-  min-height: rem(400px);
-  position: relative;
-  display: flex;
-  margin-bottom: rem(18px);
-
-  @include tablets {
-  height: 90%;
-  width: max-content;
-  }
-}
-.map-img {
-width: 100%;
- 
-  @include phones {
-  width: auto;
-  heigth:100%;
-  }
-  
-  @include tablets {
-  width: auto;
-  heigth:100%;
-  }
-}  
-.map {
-  justify-content: start;
-}*/
 #map {
   width: 100%;
   height: 100%;
@@ -1735,12 +1708,12 @@ width: 100%;
       flex-direction: column; } }
   .menu-section:before {
     position: absolute;
-    content: url("../decor/menubarsleafbg.png");
+    content: url("../../images/menubarsleafbg.png");
     right: 0;
     top: 67%; }
   .menu-section:after {
     position: absolute;
-    content: url("../decor/menu-bar-berry.png");
+    content: url("../../images/menu-bar-berry.png");
     right: 0;
     bottom: -10%; }
 
@@ -1935,7 +1908,7 @@ width: 100%;
   position: relative; }
   .team-section:before {
     position: absolute;
-    content: url("../decor/berryOne.png");
+    content: url("../../images/berryOne.png");
     left: 5%;
     bottom: -3%;
     z-index: 1000; }
@@ -2048,7 +2021,7 @@ width: 100%;
   fill: #000000; }
 
 .products-menu-section {
-  background: url("../products/bars-menu.png") center center/cover no-repeat;
+  background: url("../../images/bars-menu.png") center center/cover no-repeat;
   position: relative;
   color: #fff; }
 
@@ -2117,12 +2090,12 @@ width: 100%;
   position: relative; }
   .video::before {
     position: absolute;
-    content: url("../decor/leaf-pattern2.png");
+    content: url("../../images/leaf-pattern2.png");
     left: 0;
     top: -10%; }
   .video::after {
     position: absolute;
-    content: url("../decor/berries5.png");
+    content: url("../../images/berries5.png");
     left: 0;
     top: -10%; }
 
@@ -2146,12 +2119,12 @@ width: 100%;
       width: 90%; } }
   .player::before {
     position: absolute;
-    content: url("../decor/falling-1-leaf.png");
+    content: url("../../images/falling-1-leaf.png");
     left: 0;
     bottom: -10%; }
   .player::after {
     position: absolute;
-    content: url("../decor/leaf-player-up.png");
+    content: url("../../images/leaf-player-up.png");
     right: 0;
     top: 10%; }
 
@@ -2160,7 +2133,7 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../products/Granola-player.png);
+  background-image: url("../../images/Granola-player.png");
   background-size: cover;
   background-repeat: no-repeat;
   left: 0;
@@ -2242,7 +2215,7 @@ width: 100%;
 .player__volume-pic {
   height: 22px;
   width: 20px;
-  background-image: url(../decor/Volume.png);
+  background-image: url("../../images/Volume.png");
   background-size: cover;
   background-repeat: no-repeat; }
   @media screen and (max-width: 480px) {
@@ -2256,7 +2229,7 @@ width: 100%;
   overflow: hidden; }
 
 .player__start {
-  background-image: url(../decor/Play-gray.png); }
+  background-image: url("../../images/Play-gray.png"); }
 
 .paused {
   background: #3e3e3e;

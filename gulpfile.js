@@ -67,30 +67,19 @@ task('scripts', () => {
    .pipe(reload({ stream: true }));
 });
  
-// task('icons', () => {
-//  return src('src/images/icons/*.svg')
-//    .pipe(svgo({
-//      plugins: [
-//        {
-//          removeAttrs: {
-//            attrs: '(fill|stroke|style|width|height|data.*)'
-//          }
-//        }
-//      ]
-//    }))
-//    .pipe(svgSprite({
-//      mode: {
-//        symbol: {
-//          sprite: '../sprite.svg'
-//        }
-//      }
-//    }))
-//    .pipe(dest(`${DIST_PATH}/images/icons`));
-// });
+task('icons', () => {
+  return src('src/images/icons/*.svg')
+  .pipe(dest(`${DIST_PATH}/images/icons`));
+ });
 
 
 task( 'images', () => {
   return src("src/images/*.png")
+  .pipe(dest("dist/images"));
+});
+
+task( 'imagesjpg', () => {
+  return src("src/images/*.jpg")
   .pipe(dest("dist/images"));
 });
 
@@ -124,7 +113,7 @@ task('watch', () => {
 task('default',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'fonts'),
+   parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'imagesjpg', 'fonts'),
    parallel('watch', 'server')
  )
 );
@@ -132,5 +121,5 @@ task('default',
 task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'fonts'))
+   parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'imagesjpg', 'fonts'))
 );

@@ -1,5 +1,5 @@
 .hero {
-  background: url("../decor/bg-leaf-hero.png") right bottom no-repeat;
+  background: url("../../images/bg-leaf-hero.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: rem(650px);
@@ -18,13 +18,13 @@
 
   &::before {
     position: absolute;
-    content: url("../decor/falling-1-leaf.png");
+    content: url("../../images/falling-1-leaf.png");
     bottom: rem(-80px);
     left: 2%;
   }
   &::after {
     position: absolute;
-    content: url("../decor/CompositeLayer@1X.png");
+    content: url("../../images/CompositeLayer@1X.png");
     bottom: rem(-60px);
     right: 0;
   }
@@ -46,7 +46,7 @@
     text-align: center;
 
     &::before {
-      content: url("../decor/hero-set-tablets.png");
+      content: url("../../images/hero-set-tablets.png");
     
     }
   }
@@ -60,7 +60,7 @@
     text-align: center;
 
     &::before {
-      content: url("../decor/barph.png");
+      content: url("../../images/barph.png");
       
       
     }

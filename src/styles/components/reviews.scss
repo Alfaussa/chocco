@@ -35,13 +35,13 @@
 
   
   &::after {
-  content: url("../../decor/grey-pattern-berries.png");
+  content: url("../../images/grey-pattern-berries.png");
   position: absolute;
   top: rem(0px);
   right:0;
 
   @include phones {
-    content: url("../decor/berry-pat-phone.png");
+    content: url("../../images/berry-pat-phone.png");
     width: 35%;
   }
   }
@@ -202,7 +202,7 @@ justify-content: center;
   }
   &::before {
     position: absolute;
-    content: url("../decor/berrySet.png");
+    content: url("../../images/berrySet.png");
     right: 0;
     top: 0;
     z-index: 10;
