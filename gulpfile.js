@@ -45,7 +45,7 @@ task('styles', () => {
    .pipe(gulpif(env === 'prod', gcmq()))
    .pipe(gulpif(env === 'prod', cleanCSS()))
    .pipe(gulpif(env === 'dev', sourcemaps.write()))
-   .pipe(dest(DIST_PATH))
+   .pipe(dest(`${DIST_PATH}/styles`))
    .pipe(reload({ stream: true }));
 });
  
@@ -63,30 +63,30 @@ task('scripts', () => {
      })))
    .pipe(gulpif(env === 'prod', uglify()))
    .pipe(gulpif(env === 'dev', sourcemaps.write()))
-   .pipe(dest(DIST_PATH))
+   .pipe(dest(`${DIST_PATH}/scripts`))
    .pipe(reload({ stream: true }));
 });
  
-task('icons', () => {
- return src('src/images/icons/*.svg')
-   .pipe(svgo({
-     plugins: [
-       {
-         removeAttrs: {
-           attrs: '(fill|stroke|style|width|height|data.*)'
-         }
-       }
-     ]
-   }))
-   .pipe(svgSprite({
-     mode: {
-       symbol: {
-         sprite: '../sprite.svg'
-       }
-     }
-   }))
-   .pipe(dest(`${DIST_PATH}/images/icons`));
-});
+// task('icons', () => {
+//  return src('src/images/icons/*.svg')
+//    .pipe(svgo({
+//      plugins: [
+//        {
+//          removeAttrs: {
+//            attrs: '(fill|stroke|style|width|height|data.*)'
+//          }
+//        }
+//      ]
+//    }))
+//    .pipe(svgSprite({
+//      mode: {
+//        symbol: {
+//          sprite: '../sprite.svg'
+//        }
+//      }
+//    }))
+//    .pipe(dest(`${DIST_PATH}/images/icons`));
+// });
 
 
 task( 'images', () => {
@@ -99,6 +99,10 @@ task( 'fonts', () => {
   .pipe(dest("dist/fonts"));
 });
 
+task( 'sprite', () => {
+  return src("src/images/icons/sprite.png")
+  .pipe(dest("dist/images/icons"));
+});
  
 task('server', () => {
  browserSync.init({
