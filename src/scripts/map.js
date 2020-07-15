@@ -15,7 +15,7 @@ function init() {
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "./decor/mark.png",
+      iconImageHref: "../images/mark.png",
       iconImageSize: [46, 57]
     }
   );
@@ -26,7 +26,7 @@ function init() {
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "./decor/mark.png",
+      iconImageHref: "../images/mark.png",
       iconImageSize: [46, 57]
     }
   );
@@ -37,7 +37,7 @@ function init() {
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "./decor/mark.png",
+      iconImageHref: "../images/mark.png",
       iconImageSize: [46, 57]
     }
   );
