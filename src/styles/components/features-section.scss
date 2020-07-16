@@ -1,6 +1,6 @@
 .features-section {
 position: relative;
-background: url("../../images/bg-leaf1.png") left top 57% no-repeat;
+background: url("../images/bg-leaf1.png") left top 57% no-repeat;
 
   @include phones {
   background: none;
@@ -11,7 +11,7 @@ background: url("../../images/bg-leaf1.png") left top 57% no-repeat;
 
 
 &::before {
-  content: url("../../images/berry-bar.png");
+  content: url("../images/berry-bar.png");
   position: absolute;
   bottom: rem(-100px);
   left: 0;

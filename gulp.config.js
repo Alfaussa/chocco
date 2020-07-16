@@ -4,5 +4,5 @@ module.exports = {
   STYLE_LIBS : [
     'node_modules/normalize.css/normalize.css'
   ]
-  
+ 
  }
