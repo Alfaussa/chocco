@@ -25,13 +25,11 @@ task('clean', () => {
  return src(`${DIST_PATH}/**/*`, { read: false })
    .pipe(rm())
 })
- 
 task('copy:html', () => {
  return src(`${SRC_PATH}/*.html`)
    .pipe(dest(DIST_PATH))
    .pipe(reload({ stream: true }));
 })
- 
 task('styles', () => {
  return src([...STYLE_LIBS, 'src/styles/main.scss'])
    .pipe(gulpif(env === 'dev', sourcemaps.init()))
@@ -48,14 +46,12 @@ task('styles', () => {
    .pipe(dest(`${DIST_PATH}/styles`))
    .pipe(reload({ stream: true }));
 });
- 
 const libs = [
  'node_modules/jquery/dist/jquery.js',
  'src/scripts/*.js'
 ];
- 
 task('scripts', () => {
- return src([...JS_LIBS, 'src/scripts/*.js'])
+ return src('src/scripts/*.js')
    .pipe(gulpif(env === 'dev', sourcemaps.init()))
    .pipe(concat('main.min.js', {newLine: ';'}))
    .pipe(gulpif(env === 'prod', babel({

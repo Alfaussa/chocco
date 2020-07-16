@@ -4,7 +4,8 @@
   "description": "",
   "main": "1.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp build"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,6 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1"
   }
 }
