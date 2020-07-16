@@ -1,59 +1,38 @@
-ymaps.ready(init);
-let myPlacemark;
-function init() {
-  // Создание карты.
-  let myMap = new ymaps.Map("map", {
-    center: [55.754404, 37.607665],
-    zoom: 13,
-    controls:[]
-  });
-  myMap.behaviors.disable("scrollZoom");
-  myPlacemark1 = new ymaps.Placemark(
-    [55.784693, 37.640796],
-    {
-      hintContent: "Точка продажи №1"
-    },
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../images/mark.png",
-      iconImageSize: [46, 57]
-    }
-  );
-  myPlacemark2 = new ymaps.Placemark(
-    [55.747641, 37.604576],
-    {
-      hintContent: "Точка продажи №2"
-    },
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../images/mark.png",
-      iconImageSize: [46, 57]
-    }
-  );
-  myPlacemark3 = new ymaps.Placemark(
-    [55.762324, 37.634273],
-    {
-      hintContent: "Точка продажи №3"
-    },
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../images/mark.png",
-      iconImageSize: [46, 57]
-    }
-  );
-  myPlacemark4 = new ymaps.Placemark(
-    [55.732324, 37.594273],
-    {
-      hintContent: "Точка продажи №4"
-    },
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../images/mark.png",
-      iconImageSize: [46, 57]
-    }
-  );
-  myMap.geoObjects.add(myPlacemark1);
-  myMap.geoObjects.add(myPlacemark2);
-  myMap.geoObjects.add(myPlacemark3);
-  myMap.geoObjects.add(myPlacemark4);
-}
+  
+(function () {
+  let myMap;
+  
+  const init = () => {
+    myMap = new ymaps.Map("map", {
+      center: [55.661689, 37.747406],
+      zoom: 16,
+      controls: ['zoomControl']
+    });
+  
+    const coords = [
+      [55.661562, 37.744073],
+      [55.664009, 37.743813],
+      [55.659647, 37.749661],
+      [55.662750, 37.747100]
+    ];
+  
+    var myCollection = new ymaps.GeoObjectCollection({}, {
+      draggable: false,
+      iconLayout: 'default#image',
+      iconImageHref: '../images/icons/marker.svg',
+      iconImageSize: [46, 57],
+      iconImageOffset: [-21, -60]
+    });
+  
+    coords.forEach(coord => {
+      myCollection.add(new ymaps.Placemark(coord))
+    });
+  
+    myMap.geoObjects.add(myCollection);
+  
+    myMap.behaviors.disable('scrollZoom');
+  }
+  
+  ymaps.ready(init);
+  
+  }());
