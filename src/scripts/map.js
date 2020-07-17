@@ -19,7 +19,7 @@
     var myCollection = new ymaps.GeoObjectCollection({}, {
       draggable: false,
       iconLayout: 'default#image',
-      iconImageHref: '/images/icons/marker.svg',
+      iconImageHref: '../images/icons/mark.png',
       iconImageSize: [46, 57],
       iconImageOffset: [-21, -60]
     });
