@@ -69,7 +69,8 @@
 .player__splash__play {
   display: block;
   top: 30%;
- z-index: 100;
+  
+z-index: 100;
   position: absolute;
   width: rem(60px);
   height: rem(60px);;
@@ -107,6 +108,12 @@
 .active .player__splash {
   display: none;
 }
+
+.active .player__splash > .player__splash__play{
+  display: none;
+}
+
+
 
 .player__controls {
   display: flex;
@@ -195,7 +202,7 @@
     height: 4px;
     position: absolute;
     display: block;
-    background: url("../../images/video.png") no-repeat;
+    background: url("../images/video.png") no-repeat;
   }
 }
 
