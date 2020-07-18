@@ -12,12 +12,14 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  height: 45vh;
   }
   @include phones {
   flex-direction: column;
   text-align: center;
   align-items: center;
   margin-bottom: rem(25px);
+  height: 45vh;
   }
 
   &::before {
