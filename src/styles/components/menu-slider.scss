@@ -2,23 +2,22 @@
   background-color: #f8fafa;
   flex-direction: row;
   align-items: center;
-  position: relative;
   @include tablets {
     flex-direction: column;
    
   }
   &:before {
     position: absolute;
-    content: url("../images/menubarsleafbg.png");
+    content: url("../decor/menubarsleafbg.png");
     right: 0;
-    top: 67%;
+    top: 33%;
   }
 
   &:after  {
     position: absolute;
-    content: url("../images/menu-bar-berry.png");
+    content: url("../decor/menu-bar-berry.png");
     right: 0;
-    bottom: -10%;
+    top: 36%;
     }
 }
 .bx-wrapper {
